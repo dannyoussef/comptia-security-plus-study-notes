@@ -38,6 +38,43 @@
     * **Urgency:** luring and rushing victims to complete a request by expressing that immediate action is needed.
     > Example: "I need those files, my meeting with the board starts in 5 minutes."
 # 1.2 Given a scenario, analyze potential indicators to determine the type of attack.
+* **Malware**
+    * **Ransomware:** a malware designed to deny a user or organization access to files on their comuter.
+    * **Trojans:**
+    * **Worms:**
+    * **Potentially unwanted programs (PUPs):**
+    * **Fileless virus:**
+    * **Command and control:**
+    * **Bots:**
+    * **Cryptomalware:**
+    * **Logic bombs:**
+    * **Spyware:**
+    * **Keyloggers:**
+    * **Remote access Trojan (RAT):**
+    * **Rootkit:**
+    * **Backdoor:**
+* **Password attacks**
+    * **Spraying:**
+    * **Dictionary:**
+    * **Brute force**
+        * **Offline:**
+        * **Online:**
+    * **Rainbow table:**
+    * **Plaintext/unencrypted:**
+* **Physical attacks**
+    * **Malicious Universal Serial Bus (USB) cable:**
+    * **Malicious flash drive:**
+    * **Card cloning:**
+    * **Skimming:**
+* **Adversarial artificial intelligence (AI)**
+    * **Tainted training data for machine learning (ML):**
+    * **Security of machine learning algorithms:**
+* **Supply-chain attacks:**
+* **Cloud-based vs. on-premises attacks:**
+* **Cryptographic attacks**
+    * **Birthday:**
+    * **Collision:**
+    * **Downgrade:**
 # 1.3 Given a scenario, analyze potential indicators associated with application attacks.
 # 1.4 Given a scenario, analyze potential indicators associated with network attacks.
 # 1.5 Explain different threat actors, vectors, and intelligence sources.
