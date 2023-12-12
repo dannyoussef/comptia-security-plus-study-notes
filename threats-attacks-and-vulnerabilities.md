@@ -77,34 +77,39 @@
     * **Collision:** an event in which two different messages have the same message digest
     * **Downgrade:** taking advantage of a system's backward compatibility to force it into less secure modes of operation.
 # 1.3 Given a scenario, analyze potential indicators associated with application attacks.
-* **Privilege escalation:**
-* **Cross-site scripting:**
+* **Privilege escalation:** a cyberattack designed to gain unauthorized, privileged access into a system.
+* **Cross-site scripting:** a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites.
 * **Injections**
-    * **Structured query language (SQL):**
-    * **Dynamic-link library (DLL):**
-    * **Lightweight Directory Access Protocol (LDAP):**
-    * **Extensible Markup Language (XML):**
-* **Pointer/object dereference:**
-* **Directory traversal:**
-* **Buffer overflows:**
-* **Race conditions**
-    * **Time of check/time of use:**
-* **Error handling:**
-* **Improper input handling:**
+    * **Structured query language (SQL):** a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database.
+    * **Dynamic-link library (DLL):** a technique used for running code within the address space of another process by forcing it to load a dynamic-link library. Often used by external programs to influence the behavior of another program in a way its authors did not intend.
+    * **Lightweight Directory Access Protocol (LDAP):** an attack used to exploit web-based applications that construct LDAP statements based on user input.
+    * **Extensible Markup Language (XML):** an injection attack used to manipulate or compromise the logic of an XML application or document.
+* **Pointer/object dereference:** an attack where the threat actor makes an application point to a null section of memory where nothing exists, rather the part of memory where the application data might exist.
+> An attacker can supply a pointer for memory locations that the product is not expecting. If the pointer is dereferenced for a write operation, the attack might allow modification of critical state variables, cause a crash, or execute code.
+* **Directory traversal:** a type of HTTP exploit that is used by attackers to gain unauthorized access to restricted directories and files.
+* **Buffer overflows:** occurs when the amount of data in the buffer exceeds its storage capacity.
+* **Race conditions:** an undesirable situation that occurs when a device or system attempts to perform two or more operations at the same time.
+    * **Time of check/time of use:** a class of software bugs caused by changes in a system between the checking of a condition (such as a security credential) and the use of the results of that check.
+* **Error handling:** the process of responding to and recovering from error conditions in a program.
+* **Improper input handling:** a common type of vulnerability that occurs when an application does not properly validate user input, allowing attackers to inject malicious code or perform unauthorized actions.
 * **Replay attack**
-    * **Sessions replays:**
-* **Integer overflow:**
+    * **Sessions replays:** a form of network attack in which valid data transmission is maliciously or fraudulently repeated or delayed.
+* **Integer overflow:** occurs when an arithmetic operation results in a number that is too large to be stored in the space allocated for it.
 * **Request forgeries**
-    * **Server-side:**
-    * **Cross-site:**
-* **Application programming interface (API) attacks:**
-* **Resource exhaustion:**
-* **Memory leak:**
-* **Secure Sockets Layer (SSL) stripping:**
-* **Driver manipulation**
-    * **Shimming:**
-    * **Refactoring:**
-* **Pass the hash:**
+    * **Server-side:** an attack where the threat actor can abuse functionality on the server to read or update internal resources.
+    > The attacker can supply or modify a URL which the code running on the server will read or submit data to, and by carefully selecting the URLs, the attacker may be able to read server configurations.
+    * **Cross-site:** an attack that forces an end user to execute unwanted actions on a web application in which they're currently authenticated.
+    > Typically, with a little help of social engineering.
+* **Application programming interface (API) attacks:** an attempt by a malicious actor to gain unauthorized access to an API to break into a system or network, or transfer data.
+* **Resource exhaustion:** computer security exploits that crash, hang, or otherwise interfere with the targeted program or system (e.g., denial-of-service).
+* **Memory leak:** an unintentional form of memory consumption whereby the developer fails to free an allocated block of memory when it is no longer needed.
+* **Secure Sockets Layer (SSL) stripping:** a type of cyberattack in which an attacker downgrades a website from secure HTTPS to an insecure HTTP connection.
+* **Driver manipulation:** the alteration of system drivers to achieve a malicious outcome.
+    * **Shimming:** the process of inserting a layer between an application and the operating system to modify the behavior of the application.
+    > Can be done to modify or remove certain security features, bypass anti-virus software, or hide the presence of malware.
+    * **Refactoring:** the process of modifying an existing driver to change its behavior.
+    > Can be used to create backdoors, bypass security controls, or introduce new vulnerabilities into a system.
+* **Pass the hash:** a technique where an attacker captures a password hash (as opposed to the password characters) and then passes it through for authentication and lateral access to other networked systems.
 # 1.4 Given a scenario, analyze potential indicators associated with network attacks.
 # 1.5 Explain different threat actors, vectors, and intelligence sources.
 # 1.6 Explain the security concerns associated with various types of vulnerabilities
