@@ -111,6 +111,35 @@
     > Can be used to create backdoors, bypass security controls, or introduce new vulnerabilities into a system.
 * **Pass the hash:** a technique where an attacker captures a password hash (as opposed to the password characters) and then passes it through for authentication and lateral access to other networked systems.
 # 1.4 Given a scenario, analyze potential indicators associated with network attacks.
+* **Wireless**
+    * **Evil twin:**
+    * **Rogue access point:**
+    * **Bluesnarfing:**
+    * **Disassociation:**
+    * **Jamming:**
+    * **Radio frequency identification (RFID):**
+    * **Near-field communication (NFC):**
+    * **Initialization vector (IV):**
+* **On-path attack (previously known as man-in-the-middle attack/man-in-the-browser attack):**
+* **Layer 2 attacks**
+    * **Address Resolution Protocol (ARP) poisoning:**
+    * **Media access control (MAC) flooding:**
+    * **MAC cloning:**
+* **Domain name system (DNS)**
+    * **Domain hijacking:**
+    * **DNS poisoning:**
+    * **Uniform Resource Locator (URL) redirection:**
+    * **Domain reputation:**
+* **Distributed denial-of-service (DDoS)**
+    * **Network:**
+    * **Application:**
+    * **Operational technology (OT):**
+* **Malicious code or script execution**
+    * **PowerShell:**
+    * **Python:**
+    * **Bash:**
+    * **Macros:**
+    * **Visual Basic for Applications (VBA):**
 # 1.5 Explain different threat actors, vectors, and intelligence sources.
 # 1.6 Explain the security concerns associated with various types of vulnerabilities
 # 1.7 Summarize the techniques used in security assessments.
