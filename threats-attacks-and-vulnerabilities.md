@@ -77,6 +77,34 @@
     * **Collision:** an event in which two different messages have the same message digest
     * **Downgrade:** taking advantage of a system's backward compatibility to force it into less secure modes of operation.
 # 1.3 Given a scenario, analyze potential indicators associated with application attacks.
+* **Privilege escalation:**
+* **Cross-site scripting:**
+* **Injections**
+    * **Structured query language (SQL):**
+    * **Dynamic-link library (DLL):**
+    * **Lightweight Directory Access Protocol (LDAP):**
+    * **Extensible Markup Language (XML):**
+* **Pointer/object dereference:**
+* **Directory traversal:**
+* **Buffer overflows:**
+* **Race conditions**
+    * **Time of check/time of use:**
+* **Error handling:**
+* **Improper input handling:**
+* **Replay attack**
+    * **Sessions replays:**
+* **Integer overflow:**
+* **Request forgeries**
+    * **Server-side:**
+    * **Cross-site:**
+* **Application programming interface (API) attacks:**
+* **Resource exhaustion:**
+* **Memory leak:**
+* **Secure Sockets Layer (SSL) stripping:**
+* **Driver manipulation**
+    * **Shimming:**
+    * **Refactoring:**
+* **Pass the hash:**
 # 1.4 Given a scenario, analyze potential indicators associated with network attacks.
 # 1.5 Explain different threat actors, vectors, and intelligence sources.
 # 1.6 Explain the security concerns associated with various types of vulnerabilities
