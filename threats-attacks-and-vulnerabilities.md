@@ -111,35 +111,39 @@
     > Can be used to create backdoors, bypass security controls, or introduce new vulnerabilities into a system.
 * **Pass the hash:** a technique where an attacker captures a password hash (as opposed to the password characters) and then passes it through for authentication and lateral access to other networked systems.
 # 1.4 Given a scenario, analyze potential indicators associated with network attacks.
-* **Wireless**
-    * **Evil twin:**
-    * **Rogue access point:**
-    * **Bluesnarfing:**
-    * **Disassociation:**
-    * **Jamming:**
-    * **Radio frequency identification (RFID):**
-    * **Near-field communication (NFC):**
-    * **Initialization vector (IV):**
-* **On-path attack (previously known as man-in-the-middle attack/man-in-the-browser attack):**
+* **Wireless:** attacks aimed at exploiting vulnerabilities in wireless communication systems or networks.
+    * **Evil twin:** a fraudulent Wi-Fi acccess point that appears to be legitimate, but is set up to eavesdrop on wireless communications.
+    > Example: A fake Wi-Fi network named after a nearby cafe that tricks victims to mistake the evil twin network for the real one.
+    * **Rogue access point:** a wireless access point that has been installed on a secure network without explicit authorization from a local network administrator.
+    * **Bluesnarfing:** a hacking technique in which a hacker access a wireless device through a Bluetooth connection.
+    * **Disassociation:** a denial-of-service (DoS) attack that causes devices on the wireless network to suddenly lose communication with the access point.
+    * **Jamming:** an attack that attempts to interfere with the reception (signal) of broadcast communications.
+    * **Radio frequency identification (RFID):** an attack that uses a hardware device to capture and decode the RFID signal between the victim's card and a card reader.
+    * **Near-field communication (NFC):** similar to RFID attacks, this attack occurs when hackers use a device to scan for the frequencies used by NFC devices in order to steal data. 
+    * **Initialization vector (IV):** a data block that some modes of operation require as an additional initial input. IVs are a common mechanism used when dealing with encryption technologies.
+    > IVs are added to secret keys to scramble and add randomization to the final ciphertext, thereby, changing the result of the final encryption.
+* **On-path attack (previously known as man-in-the-middle attack/man-in-the-browser attack):** occurs when attackers place themselves between two devices (often a web browser and a web server) and intercept or modify communications between the two.
 * **Layer 2 attacks**
-    * **Address Resolution Protocol (ARP) poisoning:**
-    * **Media access control (MAC) flooding:**
-    * **MAC cloning:**
+    * **Address Resolution Protocol (ARP) poisoning:** an attack where a hacker sends falsified ARP messages to a network to disrupt casual network performance.
+    * **Media access control (MAC) flooding:** a cyberattack that targets network switches on a LAN to try and steal user data
+    * **MAC cloning:** involves replicating a legitimate device's MAC address for the purpose of masquerading as that device on the network.
 * **Domain name system (DNS)**
-    * **Domain hijacking:**
-    * **DNS poisoning:**
-    * **Uniform Resource Locator (URL) redirection:**
-    * **Domain reputation:**
+    * **Domain hijacking:** the act of changing the registration of a domain name without the permission of its original registrant.
+    * **DNS poisoning:** occurs when fake information is entered into the cache of a domain name server, resulting in DNS queries producing an incorrect reply, sending users to the wrong website.
+    * **Uniform Resource Locator (URL) redirection:** a technique to give more than one URL address to a page, form, website, or web application.
+    * **Domain reputation:** the overall "health" of your branded domain as interpreted by mailbox providers.
 * **Distributed denial-of-service (DDoS)**
-    * **Network:**
-    * **Application:**
-    * **Operational technology (OT):**
+    * **Network:** a cybercrime in which the attacker uses numerous hosts to flood a server with internet traffic and prevent users from accessing connected online services and sites.
+    * **Application:** designed to attack specific vulnerabilitites or issues within a specific application, resulting in the application not being able to deliver content to the user.
+    * **Operational technology (OT):** designed to exploit the systems in industrial environments.
+    > OT includes all the equipment (harware and software) responsible for the operation of an infrastructural facility.
 * **Malicious code or script execution**
-    * **PowerShell:**
-    * **Python:**
-    * **Bash:**
-    * **Macros:**
-    * **Visual Basic for Applications (VBA):**
+    * **PowerShell:** the command-line shell for Windows attackers can use to control Windows machines, administer the system, access Active Directory, or modify files.
+    * **Python:** commonly used in cloud-based environments.
+    * **Bash:** a Unix shell and command language used for most Linux distributions.
+    * **Macros:** designed to make applications easier to use by automating certain functions within the usability of the application itself. Attackers can use them to perform malicious attacks.
+    > Attackers need to wait for the user to open the file that has the macro and the macro execute, then whatever malicious payload inside it will execute on the user's machine.
+    * **Visual Basic for Applications (VBA):** a way to provide extensive automation inside of Microsoft Office. Also contains hooks that can talk directly to the operating system.
 # 1.5 Explain different threat actors, vectors, and intelligence sources.
 # 1.6 Explain the security concerns associated with various types of vulnerabilities
 # 1.7 Summarize the techniques used in security assessments.
