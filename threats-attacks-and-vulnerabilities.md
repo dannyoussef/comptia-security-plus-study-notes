@@ -21,7 +21,7 @@
 * **Watering hole attack:** a targeted attack designed to compromise users within a specific industry or group of users by infecting websites they typically visit and luring them to a malicious site.
 * **Typosquatting:** a form of cybersquatting (sitting on sites under someone else's brand or copyright) that targets Internet users who incorrectly type a website address into their web browser.
 * **Pretexting:** a form of social engineering in which an attacker gets access to information, a system, or a service through deceptive means, such as fabricating plausible stories.
-* **Influence campaigns** refers to a large-scale campaign launched by a threat actor, or group of threat actors, with a lot of power (e.g., hacktivist group, nation-state actor, or terrorist group) that seeks to shift public opinion.
+* **Influence campaigns:** refers to a large-scale campaign launched by a threat actor, or group of threat actors, with a lot of power (e.g., hacktivist group, nation-state actor, or terrorist group) that seeks to shift public opinion.
     * **Hybrid warfare:** a type of warfare that uses conventional and unconvential means. A campaign might use tactics like espionage, hacking, and spreading disinformation or fake news.
     * **Social media:** can be used by threat actors to push their narrative and affect public opinion. Bots and armies of posters (sometimes using hacked accounts) may post messages that repeat or reinforce the hoaxes or false narrative pushed by influence campaigns.
 * **Principles (reasons for effectiveness)**
@@ -40,41 +40,42 @@
 # 1.2 Given a scenario, analyze potential indicators to determine the type of attack.
 * **Malware**
     * **Ransomware:** a malware designed to deny a user or organization access to files on their comuter.
-    * **Trojans:**
-    * **Worms:**
-    * **Potentially unwanted programs (PUPs):**
-    * **Fileless virus:**
-    * **Command and control:**
-    * **Bots:**
-    * **Cryptomalware:**
-    * **Logic bombs:**
-    * **Spyware:**
-    * **Keyloggers:**
-    * **Remote access Trojan (RAT):**
-    * **Rootkit:**
-    * **Backdoor:**
+    * **Trojans:** a program that appears useful or legitimate, but also has a hidden and potentially malicious function that evades security mechanisms, sometimes by exploiting legitimate authorizations of a system entity that invokes the program.
+    * **Worms:** a self-replicating, self-propagating, self-contained program that uses networking mechanisms to spread itself.
+    * **Potentially unwanted programs (PUPs):** often installed when other software is installed on the computer, and may cause unwanted behavior.
+    * **Fileless virus:** a type of malicious activity that uses native, legitimate tools built into a system to execute a cyber attack.
+    * **Command and control:** a method that cybercriminals use to communicate with compromised devices within a target company's network (also known as C2).
+    * **Bots:** one or more computer connected to the Internet that has been secretly compromised with malicious logic to perform activities under the command and control of a remote administrator.
+    * **Cryptomalware:** a malware that encrypts data on the target's device and demands a ransom to restore it.
+    * **Logic bombs:** a type of malicious code embedded in software that remains dormant until specific conditions are met.
+    * **Spyware:** software that is secretly installed into an information system without the knowledge of the system user or owner.
+    * **Keyloggers:** tools attackers use to record what a person types on a device.
+    * **Remote access Trojan (RAT):** malware designed to allow an attacker to remotely control an infected control.
+    * **Rootkit:** a set of software tools with administrator-level access privileges installed on an information system and designed to hide the presence of the tools, maintain the access privileges, and conceal the activities conducted by the tools.
+    * **Backdoor:** any method by which authorized and unauthorized users are able to get around normal security measures and gain high level user access (aka root access) on a computer system, network, or software application.
 * **Password attacks**
-    * **Spraying:**
-    * **Dictionary:**
-    * **Brute force**
-        * **Offline:**
-        * **Online:**
-    * **Rainbow table:**
-    * **Plaintext/unencrypted:**
+    * **Spraying:** a type of brute-force attack where a malicious actor attempts the same password on many accounts.
+    * **Dictionary:** a type of brute-force attack where an intruder attempts to crack a password-protected security system with a "dictionary list" of common words and phrases used by businesses and individuals.
+    * **Brute force:** an attack method that uses trial-and-error to crack passwords, login credentials, and encryption keys.
+        * **Offline:** the attacker uses a computer to take passwords, compute the hash, and compare them very quickly until a match is found. The threat actor does not interact with a service's authentication service.
+        * **Online:** the traditional type of attacks against web applications, exposed SSH terminals, or any login interface.
+    * **Rainbow table:** a form of cyberattack for cracking password hashes that uses a special table consisting of precomputed strings or commonly used passwords, and corresponding hashes. Hackers must first gain access to leaked hashes in order to carry out rainbow table attacks.
+    * **Plaintext/unencrypted:** involves accessing a password in its original, unencrypted form.
 * **Physical attacks**
-    * **Malicious Universal Serial Bus (USB) cable:**
-    * **Malicious flash drive:**
-    * **Card cloning:**
-    * **Skimming:**
-* **Adversarial artificial intelligence (AI)**
-    * **Tainted training data for machine learning (ML):**
-    * **Security of machine learning algorithms:**
-* **Supply-chain attacks:**
-* **Cloud-based vs. on-premises attacks:**
+    * **Malicious Universal Serial Bus (USB) cable:** a seemingly normal USB that has additional electronics inside that can download and install malicious software on the victim's device.
+    * **Malicious flash drive:** similar to a USB cable, a flash drive can have additional electronics inside that can mask itself as a human interface device (HID; e.g., keyboard, mouse, etc.) and used for malicious intent.
+    * **Card cloning:** the process of replicating the digital information stored in debit or credit cards to create copies or clones.
+    * **Skimming:** the unauthorized use of a reader to read tags without the authorization or knowledge of the tag's owner or the individual in possession of it.
+* **Adversarial artificial intelligence (AI)** 
+    * **Tainted training data for machine learning (ML):** the process of extracting information about the behavior and characteristics of an ML system or learning how to manipulate the inputs into an ML system in order to obtain a preferred outcome.
+    * **Security of machine learning algorithms:** checking the training data, constantly retraining with more/better data, training the system with possible poisoning.
+* **Supply-chain attacks:** a type of cyberattack that targets a trusted third-party vendor who offers services or software vital to the supply chain.
+* **Cloud-based vs. on-premises attacks:** cloud-based systems are typically accessed by many users, making it easier for attackers to target them. On-premise systems can be vulnerable to attacks if they are not properly secured or maintained.
 * **Cryptographic attacks**
-    * **Birthday:**
-    * **Collision:**
-    * **Downgrade:**
+    * **Birthday:** an attack that occurs when someone exploits the mathematics behind the birthday problem in probability theory to launch a cryptographic attack.
+    > In a group of 23 people, there is a 50% chance for two individuals to share the same birthday.
+    * **Collision:** an event in which two different messages have the same message digest
+    * **Downgrade:** taking advantage of a system's backward compatibility to force it into less secure modes of operation.
 # 1.3 Given a scenario, analyze potential indicators associated with application attacks.
 # 1.4 Given a scenario, analyze potential indicators associated with network attacks.
 # 1.5 Explain different threat actors, vectors, and intelligence sources.
