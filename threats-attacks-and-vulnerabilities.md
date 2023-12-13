@@ -145,6 +145,53 @@
     > Attackers need to wait for the user to open the file that has the macro and the macro execute, then whatever malicious payload inside it will execute on the user's machine.
     * **Visual Basic for Applications (VBA):** a way to provide extensive automation inside of Microsoft Office. Also contains hooks that can talk directly to the operating system.
 # 1.5 Explain different threat actors, vectors, and intelligence sources.
+* **Actors and threats**
+    * **Advanced persistent threat (APT):**
+    * **State actors:**
+    * **Hacktivist:**
+    * **Script kiddies:**
+    * **Criminal syndicates:**
+    * **Hackers**
+        * **Authorized:**
+        * **Unauthorized:**
+        * **Semi-authorized:**
+    * **Shadow IT:**
+    * **Competitors:**
+* **Attributes of actors**
+    * **Internal/external:**
+    * **Level of sophistication/capability:**
+    * **Resources/funding:**
+    * **Intent/motivation:**
+* **Vectors**
+    * **Direct access:**
+    * **Wireless:**
+    * **Email:**
+    * **Supply chain:**
+    * **Social media:**
+    * **Removable media:**
+    * **Cloud:**
+* **Threat intelligence sources**
+    * **Open-source intelligence (OSINT):**
+    * **Closed/proprietary:**
+    * **Vulnerability databases:**
+    * **Public/private information-sharing centers:**
+    * **Dark web:**
+    * **Indicators of compromise:**
+    * **Automated Indicator Sharing (AIS)**
+        * **Structured Threat Information eXpression (STIX)/Trusted Automated eXchange of Intelligence Information (TAXII):**
+    * **Predictive analysis:**
+    * **Threat maps:**
+    * **File/code repositories:**
+* **Research source**
+    * **Vendor websites:**
+    * **Vulnerability feeds:**
+    * **Conferences:**
+    * **Academic journals:**
+    * **Requst for comments (RFC):**
+    * **Local industry groups:**
+    * **Social media:**
+    * **Threat feeds:**
+    * **Adversary tactics, techniques, and procedures (TTP):**
 # 1.6 Explain the security concerns associated with various types of vulnerabilities
 # 1.7 Summarize the techniques used in security assessments.
 # 1.8 Explain the techniques used in penetration testing.
