@@ -6,4 +6,5 @@
 * 5.0 Governance, Risk, and Compliance (14%)
 ## Resources
 * [Professor Messer's SY0-601 CompTIA Security+ Course](https://www.professormesser.com/security-plus/sy0-601/sy0-601-video/sy0-601-comptia-security-plus-course/)
+* [CompTIA Security+ Exam Cram](https://www.youtube.com/playlist?list=PL7XJSuT7Dq_VD3eHXQf3Ld2ceBSFCayns)
 * [Passemall CompTIA Security+ Practice Tests](https://passemall.com/free-comptia-security-practice-test)
