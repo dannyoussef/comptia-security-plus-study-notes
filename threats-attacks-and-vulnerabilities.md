@@ -193,35 +193,36 @@
     * **Threat feeds:**
     * **Adversary tactics, techniques, and procedures (TTP):**
 # 1.6 Explain the security concerns associated with various types of vulnerabilities.
-* **Cloud-based vs. on-premises vulnerabilities:**
-* **Zero-day:**
+* **Cloud-based vs. on-premises vulnerabilities:** cloud vulnerabilities include misconfigured cloud services, inadequate access controls, lack of cloud security architecture and strategy, or insufficient identity, credentials, and key management. On-premise vulnerabities include physical breaches, limited scalability, and maintenance challenges.
+* **Zero-day:** a vulnerability or security hole in a system unknown to its owners, developers, or anyone capable of mitigating it.
 * **Weak configurations**
-    * **Open permissions:**
-    * **Unsecure root accounts:**
-    * **Errors:**
-    * **Weak encryption:**
-    * **Unsecure protocols:**
-    * **Default settings:**
-    * **Open ports and services:**
+    * **Open permissions:** a type of weak configuration where the principle of least privilege is breached, and access to data or applications isn't properly restricted to only those who require it.
+    * **Unsecure root accounts:** superuser accounts that essentially have unlimited access to a computer and vulnerable to takeover due to poor security configurations.
+    * **Errors:** arise from mistakes in software development, configuration errors, or flawed implementations and can lead to security weaknesses for attackers to exploit.
+    * **Weak encryption:** encryption algorithms vulnerable to attack, often as a result of an insufficient key length.
+    * **Unsecure protocols:** a protocol, service, or port that introduces security concerns due to the lack of controls over confidentiality and/or integrity.
+    * **Default settings:** a type of vulnerability that affects devices having some pre-set (default) administrative credentials to all configuration settings.
+    * **Open ports and services:** a security gap that attacks can use to access a victim's systems and data.
 * **Third-party risks**
-    * **Vendor management:**
-        * **System integration:**
-        * **Lack of vendor support:**
-    * **Supply chain:**
-    * **Outsourced code development:**
-    * **Data storage:**
-* **Improper or weak patch management**
-    * **Firmware:**
-    * **Operating system (OS):**
-    * **Applications:**
-* **Legacy platforms:**
+    * **Vendor management:** many organizations are reducing the number of vendors they work with and requiring stricter onboarding procedures.
+        > Vendors may be required to submit to an external audit and agree to strict communication and reporting requirements, in the event of a potential breach.
+        * **System integration:** increased risk of insider attack due to system integrators having privileged remote or physical access, necessitating security measures and process controls.
+        * **Lack of vendor support:** vendor may end support for legacy application versions before an organization is ready to migrate business processes to another platform.
+    * **Supply chain:** a breach at any link in the supply chain can result in business impact.
+    * **Outsourced code development:** development workstations and environments must be secured to the organization's standards.
+    * **Data storage:** sensitive data stored in vendor repositories (e.g., cloud services) need to be secured, access managed, and usage monitored.
+* **Improper or weak patch management:** increases risk of security breaches.
+    * **Firmware**
+    * **Operating system (OS)**
+    * **Applications**
+* **Legacy platforms:** refers to outdated hardware or software, and can allow attackers to exploit vulnerabilitites within the system if left unpatched.
 * **Impacts**
-    * **Data loss:**
-    * **Data breaches:**
-    * **Data exfiltration:**
-    * **Identity theft:**
-    * **Financial:**
-    * **Reputation:**
-    * **Availability loss:**
+    * **Data loss:** exposure of proprietary, sensitive, or classified information through either data theft or data leakage.
+    * **Data breaches:** security incidents that result in unauthorized access to confidential information.
+    * **Data exfiltration:** occurs when malware and/or a malicious actor carries out an unauthorized data transfer from a computer, typically stealing data from personal or corporate devices.
+    * **Identity theft:** occurs when someone uses another's personal identifying information (e.g., name, credit card number, etc.) without their permission, to commit fraud or other crimes.
+    * **Financial:** can lead to financial loss.
+    * **Reputation:** an organization's public relations and/or value can become damaged.
+    * **Availability loss:** someone taking advantage of a vulnerability can cause outages or downtime, and cause a system to become unavailable.
 # 1.7 Summarize the techniques used in security assessments.
 # 1.8 Explain the techniques used in penetration testing.
