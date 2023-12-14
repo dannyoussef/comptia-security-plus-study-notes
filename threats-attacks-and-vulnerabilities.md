@@ -225,4 +225,30 @@
     * **Reputation:** an organization's public relations and/or value can become damaged.
     * **Availability loss:** someone taking advantage of a vulnerability can cause outages or downtime, and cause a system to become unavailable.
 # 1.7 Summarize the techniques used in security assessments.
+* **Threat hunting**
+    * **Intelligence fusion:**
+    * **Threat feeds:**
+    * **Advisories and bulletins:**
+    * **Maneuver:**
+* **Vulnerability scans**
+    * **False positives:**
+    * **False negatives:**
+    * **Log reviews:**
+    * **Credentialed vs. non-credentialed:**
+    * **Intrusive vs. non-intrusive:**
+    * **Application:**
+    * **Web application:**
+    * **Network:**
+    * **Common Vulnerabilities and Exposures (CVE)/Common Vulnerability Scoring System (CVSS):**
+    * **Configuration review:**
+* **Syslog/Security Information and event management (SIEM)**
+    * **Review reports:**
+    * **Packet capture:**
+    * **Data inputs:**
+    * **User behavior analysis:**
+    * **Sentiment analysis:**
+    * **Security monitoring:**
+    * **Log aggregation:**
+    * **Log collectors:**
+* **Security orchestration, automation, and response (SOAR):**
 # 1.8 Explain the techniques used in penetration testing.
