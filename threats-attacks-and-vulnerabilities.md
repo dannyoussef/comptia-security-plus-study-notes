@@ -252,3 +252,25 @@
     * **Log collectors:**
 * **Security orchestration, automation, and response (SOAR):**
 # 1.8 Explain the techniques used in penetration testing.
+* **Penetration testing**
+    * **Known environment:**
+    * **Unknown environment:**
+    * **Partially known environment:**
+    * **Rules of engagement:**
+    * **Lateral movement:**
+    * **Privilege escalation:**
+    * **Persistence:**
+    * **Cleanup:**
+    * **Bug bounty:**
+    * **Pivoting:**
+* **Passive and active reconnaissance**
+    * **Drones:**
+    * **War flying:**
+    * **War driving:**
+    * **Footprinting:**
+    * **OSINT:**
+* **Exercise types**
+    * **Red-team:**
+    * **Blue-team:**
+    * **White-team:**
+    * **Purple-team:**
