@@ -146,52 +146,57 @@
     * **Visual Basic for Applications (VBA):** a way to provide extensive automation inside of Microsoft Office. Also contains hooks that can talk directly to the operating system.
 # 1.5 Explain different threat actors, vectors, and intelligence sources.
 * **Actors and threats**
-    * **Advanced persistent threat (APT):**
-    * **State actors:**
-    * **Hacktivist:**
-    * **Script kiddies:**
-    * **Criminal syndicates:**
+    * **Advanced persistent threat (APT):** a well-resourced adversary engaged in sophisticated malicious cyber activty that is targeted and aimed at at prolonged network/system intrustion.
+    > APT objectives could include espionage, data theft, and network/system disruption or destruction.
+    * **State actors:** governments or government-sponsored entities engaging in cyber activities for political, economic, or military purposes.
+    * **Hacktivist:** hacker groups that work together to achieve a certain objective, mostly to promote a political agenda or social change.
+    * **Script kiddies:** novice hackers who use existing scripts and software to carry out cyber attacks.
+    * **Criminal syndicates:**  organized groups engaging in cybercrime for financial or other personal gain.
     * **Hackers**
-        * **Authorized:**
-        * **Unauthorized:**
-        * **Semi-authorized:**
-    * **Shadow IT:**
-    * **Competitors:**
+        * **Authorized:** ethical hackers or penetration testers hired to assess and improve cyber security (also known as White Hats).
+        * **Unauthorized:** hackers who break into computer systems to steal, change, or destroy information.
+        * **Semi-authorized:** hackers who have some level of authorization to access a system, but may use their access for malicious purposes.
+    * **Shadow IT:** the use of IT-related hardware or software by a department or individual without the knowledge of the IT or security group within the organization.
+    * **Competitors:** other organizations seeking to gain a competitive advantage through cyber means.
 * **Attributes of actors**
-    * **Internal/external:**
-    * **Level of sophistication/capability:**
-    * **Resources/funding:**
-    * **Intent/motivation:**
+    * **Internal/external:** internal threat actors can be trusted insdiers that have permission to be on the organization's network and information systems. External threat actors originate from outside an organization and do not have authorized access to systems, data, or physical resources.
+    * **Level of sophistication/capability:** highly sophisticated actors are more likely to be successful launching an attack,
+    * **Resources/funding:** determines how well a threat actor is able to attack monetarily or with the needed equipment and software.
+    * **Intent/motivation:** motivations of a threat actor can include financial gain, political influence, or ideological beliefs.
 * **Vectors**
-    * **Direct access:**
-    * **Wireless:**
-    * **Email:**
-    * **Supply chain:**
-    * **Social media:**
-    * **Removable media:**
-    * **Cloud:**
+    * **Direct access:** physical or direct network access attacks.
+    > Example: Connecting a flash drive or some other type of portable media and copying all of the files from that server onto it.
+    * **Wireless:** attacks exploiting vulnerabilities in wireless networks.
+    * **Email:** phishing, malware, and other threats delivered via email.
+    * **Supply chain:** attacks targeting the supply chain to compromise products or services.
+    > Each link in the supply chain can be perceived as an attack vector.
+    * **Social media:** exploiting information on social platforms for attacks.
+    > Example: Using an individual's Facebook profile to determine place of birth or the name of their high school mascot to attempt to brute-force a password.
+    * **Removable media:** attacks using USB drives or other removable media.
+    > A seemingly harmless USB device can begin typing and as if a person was on on the keyboard once plugged into a device.
+    * **Cloud:** threats associated with cloud-based services.
 * **Threat intelligence sources**
-    * **Open-source intelligence (OSINT):**
-    * **Closed/proprietary:**
-    * **Vulnerability databases:**
-    * **Public/private information-sharing centers:**
-    * **Dark web:**
-    * **Indicators of compromise:**
-    * **Automated Indicator Sharing (AIS)**
-        * **Structured Threat Information eXpression (STIX)/Trusted Automated eXchange of Intelligence Information (TAXII):**
-    * **Predictive analysis:**
-    * **Threat maps:**
-    * **File/code repositories:**
+    * **Open-source intelligence (OSINT):** the collection, analysis, and dissemination of information that is publicly available, and legally accessible.
+    * **Closed/proprietary:** programs or software whose source code is not published except to licensees.
+    * **Vulnerability databases:** a platform aimed at collecting, maintaining, and disseminating information about discovered computer security vulnerabilities.
+    * **Public/private information-sharing centers:** platforms for sharing threat intelligence between organizations.
+    * **Dark web:** hidden online spaces where illegal activities may be discussed or conducted.
+    * **Indicators of compromise:** the digital and informational "clues" that incident responders use to detect, diagnose, halt, and remediate malicious activity in their networks.
+    * **Automated Indicator Sharing (AIS):** enables the real-time exchange of machine-readable cyber threat indicators through a server/client architecture for communications.
+        * **Structured Threat Information eXpression (STIX)/Trusted Automated eXchange of Intelligence Information (TAXII):** a joint global initiative to drive threat intelligence sharing and collaboration among authorities.
+    * **Predictive analysis:** the process of using data to forecast future outcomes.
+    * **Threat maps:** visual representation of current cyber threats.
+    * **File/code repositories:** storage locations for code and other software development assets, such as documentation, tests, and scripts.
 * **Research source**
-    * **Vendor websites:**
-    * **Vulnerability feeds:**
-    * **Conferences:**
-    * **Academic journals:**
-    * **Requst for comments (RFC):**
-    * **Local industry groups:**
-    * **Social media:**
-    * **Threat feeds:**
-    * **Adversary tactics, techniques, and procedures (TTP):**
+    * **Vendor websites:** information from security product and service providers.
+    * **Vulnerability feeds:** feeds providing real-time information on vulnerabilities.
+    * **Conferences:** events where security professionals share knowledge and findings.
+    * **Academic journals:** peer-reviewed publications on cybersecurity research.
+    * **Request for comments (RFC):** a formal standards-track document developed in working groups within the Internet Engineering Task Force (IETF). 
+    * **Local industry groups:** regional organizations focused on cybersecurity.
+    * **Social media:** platforms where security professionals discuss trends and threats.
+    * **Threat feeds:** ongoing stream of data related to potential or current threats to an organization's security.
+    * **Adversary tactics, techniques, and procedures (TTP):** the behavior of an actor. A tactic is the highest-level description, while techniques give a more detailed description of behavior in the context of a tactic, and procedures an even lower-level, highly detailed description in the context of a technique.
 # 1.6 Explain the security concerns associated with various types of vulnerabilities.
 * **Cloud-based vs. on-premises vulnerabilities:** cloud vulnerabilities include misconfigured cloud services, inadequate access controls, lack of cloud security architecture and strategy, or insufficient identity, credentials, and key management. On-premise vulnerabities include physical breaches, limited scalability, and maintenance challenges.
 * **Zero-day:** a vulnerability or security hole in a system unknown to its owners, developers, or anyone capable of mitigating it.
