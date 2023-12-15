@@ -260,24 +260,26 @@
 * **Security orchestration, automation, and response (SOAR):** integrating technologies to automate and streamline security processes, including incident response.
 # 1.8 Explain the techniques used in penetration testing.
 * **Penetration testing**
-    * **Known environment:**
-    * **Unknown environment:**
-    * **Partially known environment:**
-    * **Rules of engagement:**
-    * **Lateral movement:**
-    * **Privilege escalation:**
-    * **Persistence:**
-    * **Cleanup:**
-    * **Bug bounty:**
-    * **Pivoting:**
+    * **Known environment:** testing conducted with full knowledge of the target system and its configurations, used for assessing the effectiveness of existing security measures (previouslly known as White Box).
+    * **Unknown environment:** testing conducted without prior knowledge of the target system (previously known as Black Box).
+    * **Partially known environment:** combines the approaches of known and unknown environment testing to perform an evaluation based on partial knowledge of the target environment.
+    > The results are a security evaluation from the perspective of a disgruntled employee. 
+    * **Rules of engagement:** detailed guidelines and constraints regarding the execution of information security testing.
+    * **Lateral movement:** refers to the techniques that a cyberattacker uses, after gaining initial access, to move deeper into a network in search of sensitive data and other high-value assets.
+    * **Privilege escalation:** occurs when a user gets access to more resources or functionality than they are normally allowed, and such elevation or changes should have been prevented by the application.
+    * **Persistence:** a technique used by hackers to maintain a connection with target systems after interruptions that can cut off their access.
+    * **Cleanup:** ensuring that traces of the penetration testing activities are removed after the assessment.
+    * **Bug bounty:** incentived program where external individuals report security vulnerabilities for rewards.
+    * **Pivoting:** the act of an attacker moving from one compromised system to one or more other systems with the same or other organizations.
 * **Passive and active reconnaissance**
-    * **Drones:**
-    * **War flying:**
-    * **War driving:**
-    * **Footprinting:**
-    * **OSINT:**
-* **Exercise types**
-    * **Red-team:**
-    * **Blue-team:**
-    * **White-team:**
-    * **Purple-team:**
+    * **Drones:** unmanned aerial vehicles used for reconnaissance or data collection.
+    > In penetration testing, this can be used to create maps of network coverage, and search for insecure networks.
+    * **War flying:** a hybrid digital/physical technique where an attacker will fly a  drone around, scanning for Wi-Fi networks.
+    * **War driving:** similar to war flying, but the attacker operates a car to scan for Wi-Fi networks from their vehicle.
+    * **Footprinting:** the process of determining what software a network host is running to understand its structure and potential vulnerabilities.
+    * **OSINT:** collecting information from publicly available sources to gather intelligence.
+* **Exercise types:** exercises, reflecting real-world conditions, that is conducted as a simulated adversarial attempt to compromise organizational missions and/or business processes to provide a comprehensive assessment of the security capability of the information system and organization.
+    * **Red-team:** attempt to expoit the current security architecture to identify points of improvement across people, processes, and/or technology.
+    * **Blue-team:** defends against and responds to the red-team attack by monitoring systems for suspicious activity.
+    * **White-team:** act as the judges, enforcing the rules of the exercise, observing the exercise, scoring teams, resolving problems that may arise, and ensures that the competition runs fairly and does not cause operational problems for the defender's mission.
+    * **Purple-team:** collaboration between red and blue teams to improve overall security effectiveness.
