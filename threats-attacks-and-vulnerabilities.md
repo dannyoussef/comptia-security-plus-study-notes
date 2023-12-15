@@ -231,31 +231,33 @@
     * **Availability loss:** someone taking advantage of a vulnerability can cause outages or downtime, and cause a system to become unavailable.
 # 1.7 Summarize the techniques used in security assessments.
 * **Threat hunting**
-    * **Intelligence fusion:**
-    * **Threat feeds:**
-    * **Advisories and bulletins:**
-    * **Maneuver:**
+    * **Intelligence fusion:** the orocess of searching and correlating data from many sources, in order to look for indicators that a threat is present.
+    * **Threat feeds:** services providing real-time information on emerging threats.
+    * **Advisories and bulletins:** provide summaries and information about new security vulnerabilities, patches, and recommended actions.
+    * **Maneuver:** a strategy or technique employed by hackers to navigate and exploit vulnerabilities within a target environment.
 * **Vulnerability scans**
-    * **False positives:**
-    * **False negatives:**
-    * **Log reviews:**
-    * **Credentialed vs. non-credentialed:**
-    * **Intrusive vs. non-intrusive:**
-    * **Application:**
-    * **Web application:**
-    * **Network:**
-    * **Common Vulnerabilities and Exposures (CVE)/Common Vulnerability Scoring System (CVSS):**
-    * **Configuration review:**
+    * **False positives:** incorrectly identifying normal behavior as a security threat.
+    * **False negatives:** failing to identify actual security threats.
+    * **Log reviews:** validating a reported vulnerability by examining relevant system and network logs.
+    * **Credentialed vs. non-credentialed:** a credentialed scan is when the scanner is given extra access, similar to the access an inside would have. Usually reveals more vulnerabilities. A non-credentialed scan has no special access to hosts, but it cannot do anything an unprivileged user on the network couldn't do.
+    > Vulnerabilities revealed by non-credentialed scans are likely to be more serious since they are accessible even to unprivileged users.
+    * **Intrusive vs. non-intrusive:** Intrusive scans actively interact with its target to test and exploit vulnerabilities. Non-intrusive scans is passive and doesn't directly interact with its target (typically for observing and analyzing).
+    * **Application:** designed to search for vulnerabilities within specific applications or types of applications.
+    * **Web application:** designed to search for vulnerabilities in web applications.
+    * **Network:** designed to scan hosts on a network.
+    * **Common Vulnerabilities and Exposures (CVE)/Common Vulnerability Scoring System (CVSS):** CVE is a list of vulnerabilities. CVSS provides a way to capture the principal characteristics of a vulnerability and produce a numerical score reflecting its severity.
+    > CVSS severity scores range from 0 to 10, with 10 being the most severe.
+    * **Configuration review:** evaluating system and application configurations to ensure adherence to security best practices.
 * **Syslog/Security Information and event management (SIEM)**
-    * **Review reports:**
-    * **Packet capture:**
-    * **Data inputs:**
-    * **User behavior analysis:**
-    * **Sentiment analysis:**
-    * **Security monitoring:**
-    * **Log aggregation:**
-    * **Log collectors:**
-* **Security orchestration, automation, and response (SOAR):**
+    * **Review reports:** analyzing findings and recommendations from security assessments.
+    * **Packet capture:** capturing and analyzing network traffic to identify anomalies or malicious activity.
+    * **Data inputs:** gathering and analyzing various data sources to identify patterns or anomalies.
+    * **User behavior analysis:** monitoring and analyzing user activities to detect abnormal behavior indicative of a security threat.
+    * **Sentiment analysis:** examining how the public views a particular organization.
+    * **Security monitoring:** continuous observation of systems and networks for security events and anomalies.
+    * **Log aggregation:** collecting and centralizing log data from multiple sources for comprehensive analysis.
+    * **Log collectors:** wait for messages to be sent from all of the different devices on the network.
+* **Security orchestration, automation, and response (SOAR):** integrating technologies to automate and streamline security processes, including incident response.
 # 1.8 Explain the techniques used in penetration testing.
 * **Penetration testing**
     * **Known environment:**
