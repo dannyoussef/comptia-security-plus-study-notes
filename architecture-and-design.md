@@ -62,6 +62,37 @@
     > Allows someone on one VM to gain access to resources on a separate VM.
     > Updating software regularly and installing patches reduces the risk of exploiting this.
 # 2.3 Summarize secure application development, deployment, and automation concepts.
+* **Environment**
+    * **Development:**
+    * **Test:**
+    * **Staging:**
+    * **Production:**
+    * **Quality assurance (QA):**
+* **Provisioning and deprovisioning:**
+* **Integrity measurement:**
+* **Secure coding techniques**
+    * **Normalization:**
+    * **Stored procedures:**
+    * **Obfuscation/camouflage:**
+    * **Code reuse/dead code:**
+    * **Server-side vs. client-side execution and validation:**
+    * **Memory management:**
+    * **Use of third-party libraries and software development kits (SDKs):**
+    * **Data exposure:**
+* **Open Web Application Security Project (OWASP):**
+* **Software diversity**
+    * **Compiler"**
+    * **Binary:**
+* **Automation/scripting:**
+    * **Automated courses of action:**
+    * **Continous monitoring:**
+    * **Continous validation:**
+    * **Continous integration:**
+    * **Continous delivery:**
+    * **Continous deployment:**
+* **Elasticity:**
+* **Scalability:**
+* **Version control:**
 # 2.4 Summarize authentication and authorization design concepts.
 # 2.5 Given a scenario, implement cybersecurity resilience.
 # 2.6 Explain the security implications of embedded and specialized systems.
