@@ -31,32 +31,36 @@
     * **DNS sinkhole:** a mechanism aimed at protecting users by intercepting DNS requests attempting to connect to known malicious or unwanted domains and return a false, or rather controlled IP address.
 # 2.2 Summarize virtualization and cloud computing concepts.
 * **Cloud models**
-    * **Infrastructure as a service (IaaS):**
-    * **Platform as a service (Paas):**
-    * **Software as a service (SaaS):**
-    * **Anything as a service (AaaS):**
-    * **Public:**
-    * **Community:**
-    * **Private:**
-    * **Hybrid:**
-* **Cloud service providers:**
-* **Managed servie provider (MSP)/managed security service provider (MSSP):**
-* **On-premises vs. off-premises:**
-* **Fog computing:**
-* **Edge computing:**
-* **Thin client:**
-* **Containers:**
-* **Microservices:**
+    * **Infrastructure as a service (IaaS):** a cloud computing service model by means of which computing resources are supplied by a cloud services provider.
+    * **Platform as a service (Paas):** a complete cloud environment that includes everything developers need to build, run, and manage applications (from servers and operating systems, to networking, storage, tools, etc.)
+    * **Software as a service (SaaS):** a software licensing and delivery model in which software is licensed on a subscription basis and is centrally hosted.
+    * **Anything as a service (AaaS):** a general category of services related to cloud computing and remote access.
+    * **Public:** an IT model where on-demand computing services and infrastructure are managed by a third-party provider and shared with multiple organizations using the public internet.
+    * **Community:** a cloud infrastructure in which multiple organizations share resources and services based on common operational and regulatory requirements.
+    * **Private:** a cloud computing environment dedicated to a single organization.
+    * **Hybrid:** a mixed computing environment where applications are run using a combination of computing, storage, and services in different environments (public and private clouds).
+* **Cloud service providers:** an IT company that provides on-demand, scalable computing resources like computing power, data storage, or applications over the internet.
+* **Managed service provider (MSP)/managed security service provider (MSSP):** provides outsourced monitoring and management of security devices and systems.
+* **On-premises vs. off-premises:** on-premise is a proposed solution hosted in-house on the users/organization system. Off-premise has hosting and support done by some other third-party.
+* **Fog computing:** an architecture that use edge devices (bridge between two networks) to carry out cloud computing and services to the edge of an enterprise's network.
+* **Edge computing:** a distributed computing paradigm that brings computation and data storage closer to the sources of data.
+* **Thin client:** a computer that uses resources inside a central server as opposed to a hard drive.
+* **Containers:** standard units of software that package up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
+* **Microservices:** an architectural and organizational approach to software development where software is composed of small, independent services that communicate over well-defined APIs.
+> Makes applications easier to scale and faster to develop.
 * **Infrastructure code**
-    * **Software-defined networking (SDN):**
-    * **Software-defined visiblity (SDV):**
-* **Serverless architecture:**
-* **Services integration:**
-* **Resource policies:**
-* **Transit gateway:**
+    * **Software-defined networking (SDN):** an approach to networking that uses software-based controllers or APIs to communicate with underlying hardware infrastructure and direct traffic on a network.
+    * **Software-defined visiblity (SDV):** a network-level visibility controller that aggregates application data from multiple devices and sources and provides composite application information.
+* **Serverless architecture:** a way to build and run applications and services without having to manage infrastructure.
+* **Services integration:** an approach to managing multiple suppliers of services and integrating them to provide a single business-facing IT organization.
+* **Resource policies:** allow you to specify who can access a specific resource.
+* **Transit gateway:** a network transit hub that you can use to interconnect your virtual private clouds (VPCs) and on-premises networks.
 * **Virtualization**
-    * **Virtual machine (VM) sprawl avoidance:**
-    * **VM escape protection:**
+    * **Virtual machine (VM) sprawl avoidance:** the uncontrolled growth of virtual machines within an environment.
+    > Sometimes, organizations end up with a large number of VMs that are underutilized, not properly managed, or even forgotten.
+    * **VM escape protection:** VM escape is the process of a program breaking out of the virtual machine on which it is running and interacting with the host operating system.
+    > Allows someone on one VM to gain access to resources on a separate VM.
+    > Updating software regularly and installing patches reduces the risk of exploiting this.
 # 2.3 Summarize secure application development, deployment, and automation concepts.
 # 2.4 Summarize authentication and authorization design concepts.
 # 2.5 Given a scenario, implement cybersecurity resilience.
