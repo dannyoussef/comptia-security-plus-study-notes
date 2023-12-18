@@ -30,6 +30,33 @@
     * **Fake telemetry:** contains decoy or faked telemetry data that can be used to entice attackers while simultaneously capturing data on and about the attack.
     * **DNS sinkhole:** a mechanism aimed at protecting users by intercepting DNS requests attempting to connect to known malicious or unwanted domains and return a false, or rather controlled IP address.
 # 2.2 Summarize virtualization and cloud computing concepts.
+* **Cloud models**
+    * **Infrastructure as a service (IaaS):**
+    * **Platform as a service (Paas):**
+    * **Software as a service (SaaS):**
+    * **Anything as a service (AaaS):**
+    * **Public:**
+    * **Community:**
+    * **Private:**
+    * **Hybrid:**
+* **Cloud service providers:**
+* **Managed servie provider (MSP)/managed security service provider (MSSP):**
+* **On-premises vs. off-premises:**
+* **Fog computing:**
+* **Edge computing:**
+* **Thin client:**
+* **Containers:**
+* **Microservices:**
+* **Infrastructure code**
+    * **Software-defined networking (SDN):**
+    * **Software-defined visiblity (SDV):**
+* **Serverless architecture:**
+* **Services integration:**
+* **Resource policies:**
+* **Transit gateway:**
+* **Virtualization**
+    * **Virtual machine (VM) sprawl avoidance:**
+    * **VM escape protection:**
 # 2.3 Summarize secure application development, deployment, and automation concepts.
 # 2.4 Summarize authentication and authorization design concepts.
 # 2.5 Given a scenario, implement cybersecurity resilience.
