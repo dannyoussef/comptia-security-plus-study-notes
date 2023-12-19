@@ -99,6 +99,44 @@
 * **Version control:** the practice of tracking and managing changes to software code.
 > Ensures new and older versions of the software can be identified and allows security team to track security vulnerabilities and vendor support.
 # 2.4 Summarize authentication and authorization design concepts.
+* **Authentication methods**
+    * **Directory services:**
+    * **Federation:**
+    * **Attestation:**
+    * **Technologies**
+        * **Time-based one-time password (TOTP):**
+        * **HMAC-based one-time password (HOTP):**
+        * **Short message service (SMS):**
+        * **Token key:**
+        * **Static codes:**
+        * **Authentication applications:**
+        * **Push notifications:**
+        * **Phone call:**
+    * **Smart card authentication:**
+* **Biometrics**
+    * **Fingerprint:**
+    * **Retina:**
+    * **Iris:**
+    * **Facial:**
+    * **Voice:**
+    * **Vein:**
+    * **Gait analysis:**
+    * **Efficacy rates:**
+    * **False acceptance:**
+    * **False rejection:**
+    * **Crossover error rate:**
+* **Multifactor authentication (MFA) factors and attributes**
+    * **Factors**
+        * **Something you know:**
+        * **Something you have:**
+        * **Something you are:**
+    * **Attributes**
+        * **Somewhere you are:**
+        * **Something you can do:**
+        * **Something you exhibit:**
+        * **Someone you know:**
+* **Authentication, authorization, and accounting (AAA):**
+* **Cloud vs. on-premises requirements:**
 # 2.5 Given a scenario, implement cybersecurity resilience.
 # 2.6 Explain the security implications of embedded and specialized systems.
 # 2.7 Explain the importance of physical security controls.
