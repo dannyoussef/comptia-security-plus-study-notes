@@ -63,36 +63,41 @@
     > Updating software regularly and installing patches reduces the risk of exploiting this.
 # 2.3 Summarize secure application development, deployment, and automation concepts.
 * **Environment**
-    * **Development:**
-    * **Test:**
-    * **Staging:**
-    * **Production:**
-    * **Quality assurance (QA):**
-* **Provisioning and deprovisioning:**
-* **Integrity measurement:**
+    * **Development:** a workspace for developers to make changes without breaking anything in a live environment.
+    * **Test:** an environment where the testing teams analyze the quality of the application/program.
+    * **Staging:** the last step before an application goes into production, meant to ensure that all new changes deployed from previous environments are working as intended.
+    * **Production:** a real-time setting where the latest versions of software, products, or updates are pushed into live, usable operations for the intended end users.
+    * **Quality assurance (QA):** an environment where you test your upgrade procedures against data, hardware, and software that closely simulate the production environment and where you allow intended users to test the resulting application.
+* **Provisioning and deprovisioning:** provisioning refers to onboarding new users (creating user account, providing access, etc.). Deprovisioning applies to the offboarding process, revoking employee access when needed.
+* **Integrity measurement:** responsible for collecting file hashes, placing them in kernel memory (where userland applications cannot access/modify it) and allows local and remote parties to verify the measured values.
 * **Secure coding techniques**
-    * **Normalization:**
-    * **Stored procedures:**
-    * **Obfuscation/camouflage:**
-    * **Code reuse/dead code:**
-    * **Server-side vs. client-side execution and validation:**
-    * **Memory management:**
-    * **Use of third-party libraries and software development kits (SDKs):**
-    * **Data exposure:**
-* **Open Web Application Security Project (OWASP):**
-* **Software diversity**
-    * **Compiler"**
-    * **Binary:**
-* **Automation/scripting:**
-    * **Automated courses of action:**
-    * **Continous monitoring:**
-    * **Continous validation:**
-    * **Continous integration:**
-    * **Continous delivery:**
-    * **Continous deployment:**
-* **Elasticity:**
-* **Scalability:**
-* **Version control:**
+    * **Normalization:** the moving of units of data from one place to another in your relational schema (i.e., organization data in a database).
+    * **Stored procedures:** a prepared SQL code that you can save, so the code can be reused.
+    > Used for data validation and/or access control mechanisms.
+    * **Obfuscation/camouflage:** the act of creating source or machine code that is difficult for humans or computers to understand.
+    * **Code reuse/dead code:** code reuse can cause dead code since not all interfaces or functions may be used.
+    > Dead code is code that is never executed and should be optimized out of a program (wastes computation time and memory).
+    * **Server-side vs. client-side execution and validation:** client-side provides instant feedback to the user, while server-side ensures that all data is validated correctly.
+    > Combining both creates a robust validation system that ensures the integrity and security of the data.
+    * **Memory management:** the process of controlling and coordinating a computer's main memory. It ensures that blocks of memory space are properly managed and allocated, so the OS, applications, and other running processes have the memory they need.
+    * **Use of third-party libraries and software development kits (SDKs):** important to evaluate the code for any security bugs, since they can be a big security risk for proprietary software products.
+    * **Data exposure:** a security violation, in which sensitive information is copied, transmitted, viewed, altered, oor stole by an unauthorized individual.
+* **Open Web Application Security Project (OWASP):** the online community that produces freely available articles, methodologies, documentation, tools, and technologies in the field of web application security.
+* **Software diversity:** creation of software that's different on each user endpoint/device.
+    * **Compiler:** dynamic paths in compiler at compile time.
+    * **Binary:** results in a binary that is slightly different on every endpoint.
+> Makes the process of exploiting a software vulnerability more difficult for attackers.
+* **Automation/scripting:** processes designed to carry out tasks automatically without the need for human intervention.
+    * **Automated courses of action:** refers to an automated series of steps or activities performed in order to produce consistent results.
+    * **Continous monitoring:** an approach whwere an organization constantly monitors its IT systems and networks to detect security threats, performance issues, or non-compliance problems in an automated manner.
+    * **Continous validation:** testing to make sure that automated processes fit their purpose and fulfill the user's requirements, and that security requirements are met.
+    * **Continous integration:** the practice of merging all developers' working copies to a shared mainline several times a day, after which automated builds and tests are run.
+    * **Continous delivery:** a software development practice where code changes are automatically prepared for a release to production.
+    * **Continous deployment:** a strategy in software development where code changes to an application are released automatically into the production environment.
+* **Elasticity:** the ability of a system to automatically grow and shrink based on app demand.
+* **Scalability:** the ability of a system to handle growth of users or work.
+* **Version control:** the practice of tracking and managing changes to software code.
+> Ensures new and older versions of the software can be identified and allows security team to track security vulnerabilities and vendor support.
 # 2.4 Summarize authentication and authorization design concepts.
 # 2.5 Given a scenario, implement cybersecurity resilience.
 # 2.6 Explain the security implications of embedded and specialized systems.
