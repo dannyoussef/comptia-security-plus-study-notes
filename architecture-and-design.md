@@ -100,43 +100,51 @@
 > Ensures new and older versions of the software can be identified and allows security team to track security vulnerabilities and vendor support.
 # 2.4 Summarize authentication and authorization design concepts.
 * **Authentication methods**
-    * **Directory services:**
-    * **Federation:**
-    * **Attestation:**
+    * **Directory services:** used to store, retrieve, and manage information about objects, such as user accounts, computer accounts, mail accounts, and information on resources.
+    * **Federation:** linking a user's identify across multiple separate identity management systems.
+    * **Attestation:** the process of confirming the device (laptop, phone, etc.) is an approved device compliant with company policies.
     * **Technologies**
-        * **Time-based one-time password (TOTP):**
-        * **HMAC-based one-time password (HOTP):**
-        * **Short message service (SMS):**
-        * **Token key:**
-        * **Static codes:**
-        * **Authentication applications:**
-        * **Push notifications:**
-        * **Phone call:**
-    * **Smart card authentication:**
+        * **Time-based one-time password (TOTP):** a computer algorithm that generates a one-time password that uses the current time as a source of uniqueness. 
+        > An extension of the HMAC-based one-time password algorithm. Uses time in increments called the timestep, which is usually 30 or 60 seconds. Each OTP is valid for the duration of the timestep.
+        * **HMAC-based one-time password (HOTP):** uses a keyed-hash message authentication code (HMAC) that relies on the seed, a secret known only by the token and validating server, and a moving factor, a counter.
+        * **Short message service (SMS):** used as an additional layer of security where the user is authenticated, and an SMS message is sent to the user's mobile phone.
+        * **Token key:** one-time password provided on a hardware of software token generator.
+        > Authenticator apps are a common software solution for token keys.
+        * **Static codes:** a static set of numbers and letters to provide for authentication.
+        > A password or paraphrase is an example of an alphanumeric static code.
+        * **Authentication applications:** a software-based authenticator that implements two-step verification services using the TOTP and HOTP algorithms for authenticating users of software applications.
+        > Examples include Microsoft Authenticator and Google Authenticator.
+        * **Push notifications:** when the server is pushing down the authentication information to your mobile device.
+        > Uses the mobile device app to be able to receive the pushed message and display the authentication information.
+        * **Phone call:** an authentication method in which an automated process calls you, waiting for a response with a pin or other input via voice or keypad.
+    * **Smart card authentication:** a credit-card-sized token that contains a certificate and is used for authentication in conjunction with a PIN.
+    > Generally requires physical proximity or insertion into reader.
 * **Biometrics**
-    * **Fingerprint:**
-    * **Retina:**
-    * **Iris:**
-    * **Facial:**
+    * **Fingerprint:** verifying an individual's identity based on one or more of their fingerprints.
+    * **Retina:** uses the unique patterns on a person's retina blood vessels.
+    * **Iris:** involves capturing an image of a user's iris.
+    * **Facial:** a way of identifying or confirming an individual's identity using their face.
     * **Voice:**
-    * **Vein:**
-    * **Gait analysis:**
-    * **Efficacy rates:**
-    * **False acceptance:**
-    * **False rejection:**
-    * **Crossover error rate:**
-* **Multifactor authentication (MFA) factors and attributes**
+    * **Vein:** using blood vessels in the palm.
+    * **Gait analysis:** identification using gait (the way an individual walks).
+    * **Efficacy rates:** refers to the overall accuracy of a biometric authentication method.
+    * **False acceptance:** occurs when an invalid subject is authenticated.
+    * **False rejection:** occurs when a valid subject is rejected.
+    * **Crossover error rate:** the overall accuracy of a biometric system. It shows where the false rejection rate is equal to the false acceptance rate.
+    > FAR is the false acceptance rate, FRR is the false rejection rate.
+* **Multifactor authentication (MFA) factors and attributes:** works by requiring two or more of the following authentication methods.
     * **Factors**
-        * **Something you know:**
-        * **Something you have:**
-        * **Something you are:**
+        * **Something you know:** pin or password.
+        * **Something you have:** trusted device.
+        * **Something you are:** biometric (fingerprint).
     * **Attributes**
-        * **Somewhere you are:**
-        * **Something you can do:**
-        * **Something you exhibit:**
-        * **Someone you know:**
-* **Authentication, authorization, and accounting (AAA):**
-* **Cloud vs. on-premises requirements:**
+        * **Somewhere you are:** your expected location, such as the company office, home, or home city.
+        * **Something you can do:** such as writing your signature.
+        * **Something you exhibit:** the personalized manner you perform an action, such as gait.
+        * **Someone you know:** responding to a challenge with knowledge of a characteristic of a specific individual you know.
+* **Authentication, authorization, and accounting (AAA):** security framework that controls access to computer resources, enforces policies, and audits usage. With AAA, network devices use a centralized RADIUS or TACACS+ server to authenticate users, authorize the commands users can run on a device, and provide accounting information.
+> Authentication provided identity verification before access to a network device is granted. Authorization provides access control. Accounting provides a method for collecting information, logging the information locally on a network device, and sending it to an AAA server for billing, auditing, and reporting.
+* **Cloud vs. on-premises requirements:** on-premises; the perimeter of the location is easy to establish and control. Proximity cards (badge system) and security guards at a reception can also control access to the company. Does not always assume internet access is available. Cloud; Internet access is assumed to authenticate and connect to cloud resources. The security perimeter is no longer confined to the on-premises environment.
 # 2.5 Given a scenario, implement cybersecurity resilience.
 # 2.6 Explain the security implications of embedded and specialized systems.
 # 2.7 Explain the importance of physical security controls.
