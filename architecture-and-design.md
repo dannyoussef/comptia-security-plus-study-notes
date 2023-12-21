@@ -146,6 +146,50 @@
 > Authentication provided identity verification before access to a network device is granted. Authorization provides access control. Accounting provides a method for collecting information, logging the information locally on a network device, and sending it to an AAA server for billing, auditing, and reporting.
 * **Cloud vs. on-premises requirements:** on-premises; the perimeter of the location is easy to establish and control. Proximity cards (badge system) and security guards at a reception can also control access to the company. Does not always assume internet access is available. Cloud; Internet access is assumed to authenticate and connect to cloud resources. The security perimeter is no longer confined to the on-premises environment.
 # 2.5 Given a scenario, implement cybersecurity resilience.
+* **Redundancy**
+    * **Geographic disperal:**
+    * **Disk**
+        * **Redundant array of inexpensive disks (RAID) levels:**
+        * **Multipath:**
+    * **Network**
+        * **Load balancers:**
+        * **Network interface card (NIC) teaming:**
+    * **Power:**
+        * **Uninterruptible power supply (UPS):**
+        * **Generator:**
+        * **Dual supply:**
+        * **Managed power distribution units (PDUs):**
+* **Replication**
+    * **Storage area network:**
+    * **VM:**
+* **On-premises vs. cloud:**
+* **Backup types**
+    * **Full:**
+    * **Incremental:**
+    * **Snapshot:**
+    * **Differential:**
+    * **Tape:**
+    * **Disk:**
+    * **Copy:**
+    * **Network-attached storage (NAS):**
+    * **Storage-area network:**
+    * **Cloud:**
+    * **Image:**
+    * **Online vs. offline:**
+    * **Offsite storage**
+        * **Distance considerations:**
+* **Non-persistence**
+    * **Revert to known state:**
+    * **Last known-good configuration:**
+    * **Live boot media:**
+* **High availability**
+    * **Scalability:**
+* **Restoration order:**
+* **Diversity**
+    * **Technologies:**
+    * **Vendors:**
+    * **Crypto:**
+    * **Controls:**
 # 2.6 Explain the security implications of embedded and specialized systems.
 # 2.7 Explain the importance of physical security controls.
 # 2.8 Summarize the basics of cryptographic concepts.
