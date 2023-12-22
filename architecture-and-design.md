@@ -147,49 +147,62 @@
 * **Cloud vs. on-premises requirements:** on-premises; the perimeter of the location is easy to establish and control. Proximity cards (badge system) and security guards at a reception can also control access to the company. Does not always assume internet access is available. Cloud; Internet access is assumed to authenticate and connect to cloud resources. The security perimeter is no longer confined to the on-premises environment.
 # 2.5 Given a scenario, implement cybersecurity resilience.
 * **Redundancy**
-    * **Geographic disperal:**
+    * **Geographic dispersal:** placing physical servers in geographically diverse data centers to safeguard against catastrophic events and natural disasters and load balance traffic for optimal performance.
     * **Disk**
-        * **Redundant array of inexpensive disks (RAID) levels:**
-        * **Multipath:**
+        * **Redundant array of inexpensive disks (RAID) levels:** a data storage virtualization technology that combines multiple physical disk drive components into one or more logical units for the purposes of data redundance, performance improvements, etc.
+        * **Multipath:** establishing multiple physical routes between a server and the storage device that supports it.
     * **Network**
-        * **Load balancers:**
-        * **Network interface card (NIC) teaming:**
+        * **Load balancers:** distribute a set of tasks over a set of resources, with the aim of making their overall processing more efficient
+        * **Network interface card (NIC) teaming:** grouping physical network adapters to improve performance and redundancy.
+        > NIC teaming increases the available bandwidth in a network path.
     * **Power:**
-        * **Uninterruptible power supply (UPS):**
-        * **Generator:**
-        * **Dual supply:**
-        * **Managed power distribution units (PDUs):**
-* **Replication**
-    * **Storage area network:**
-    * **VM:**
-* **On-premises vs. cloud:**
+        * **Uninterruptible power supply (UPS):** a standby battery that provides power when the primary power fails.
+        > Designed to keep systems running for a limited period of time, enabling graceful system shutdown. Protects systems and data from damage.
+        * **Generator:** a standby power source that is powered by diesel, gasoline, propane, or natural gas.
+        > Can be used to provide electricity for an extended period of time, when power from the grid fails.
+        * **Dual supply:** two identical power supplies that have the capacity to run on their own and keep the server running, should one goes down.
+        * **Managed power distribution units (PDUs):** a device that provides multiple power outlets (for power cable plugs). Includes network connectivity for remote connection and management of the power outlets.
+        > Distributes clean power to multiple, critical network resouces, such as servers, routers, switches, and data centers.
+* **Replication:** a method wherein data is copied from one location to another.
+    * **Storage area network:** a hardware device that contains a large number of fast disks (e.g., SSDs), usually isolated from the LAN on its own network.
+    > Provide an extra measure of redundance in case a main storage system fails.
+    * **VM:** where a copy of a VM is copied across to another physical host.
+    > With live migration, VM files can be copied across onto a second physical host with no downtime.
+* **On-premises vs. cloud:** storage replication in the cloud is often a simple-level selection and VM replication is greatly simplified.
+> Cloud reduces infrastructure complexity, but can come at an additional cost.
 * **Backup types**
-    * **Full:**
-    * **Incremental:**
-    * **Snapshot:**
-    * **Differential:**
-    * **Tape:**
-    * **Disk:**
-    * **Copy:**
-    * **Network-attached storage (NAS):**
-    * **Storage-area network:**
-    * **Cloud:**
-    * **Image:**
-    * **Online vs. offline:**
+    * **Full:** a complete copy of a business or organization's data assets in their entirety.
+    * **Incremental:** only copies data that has been changed or created since the previous backup activity was conducted.
+    * **Snapshot:** uses the fast copying technology of a storage device to perform the data copying portion of the backup.
+    * **Differential:** copies only newly added and changed data since the last full backup.
+    > Requires more time to complete and more storage space compared to incremental backups. 
+    * **Tape:** backup to a magnetic tape, is the slowest form of restore.
+    > Can be stored offsite with a vaulting service in a fireproof vault.
+    * **Disk:** backup to a USB, removable hard drive, or disk on another server.
+    * **Copy:** uxing xcopy/robocopy to copy to another server on the network.
+    > Useful in one-off/ad hoc scenarios.
+    * **Network-attached storage (NAS):** allows access to storage drives via a network.
+    > A good solution for large volume of data (multiple terabytes).
+    * **Storage-area network:** good for fast backups of large datasets, common with SQL databases or email.
+    * **Cloud:** a service that replicates your company's data to cloud-based storage and can be used for disaster recovery or to keep a copy of your data off-site.
+    * **Image:** creates a copy of an OS and all the data associated with it, including the system state and application configurations.
+    * **Online vs. offline:** online backups involve entrusting data to cloud storage provider. Offline backups take a tangible approach, storing data on physical devices like external hard drives.
     * **Offsite storage**
-        * **Distance considerations:**
-* **Non-persistence**
-    * **Revert to known state:**
-    * **Last known-good configuration:**
-    * **Live boot media:**
+        * **Distance considerations:** must be considered in planning, such as travel time for retrieving tapes.
+* **Non-persistence:** refers to systems that are not permanent and can be returned to a previous state.
+    * **Revert to known state:** returning to a known working condition.
+    * **Last known-good configuration:** useful restoration option shipped with all versions of Windows. Gives access to the computer when it is not able to boot on its own due to any number of problems.
+    > In Windows, the new last know-good is created at each login.
+    * **Live boot media:** a copy of the OS is saved to a USB flash drive or DVD. Enables booting from the removable media.
 * **High availability**
-    * **Scalability:**
-* **Restoration order:**
+    * **Scalability:** the ability of a system to handle growth of users or work.
+* **Restoration order:** establishing the order in which components, systems, and services should be restored based on defined criteria.
+> Generally, critical systems will be restored first.
 * **Diversity**
-    * **Technologies:**
-    * **Vendors:**
-    * **Crypto:**
-    * **Controls:**
+    * **Technologies:** different technologies in service deliver (OS, apps, appliances).
+    * **Vendors:** getting a service from multiple (different) providers at the same time.
+    * **Crypto:**  when a company uses multiple algorithms to protect their data.
+    * **Controls:** implements a compensating (backup) control that could replace a primary control should it fail.
 # 2.6 Explain the security implications of embedded and specialized systems.
 # 2.7 Explain the importance of physical security controls.
 # 2.8 Summarize the basics of cryptographic concepts.
