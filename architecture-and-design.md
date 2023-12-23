@@ -204,49 +204,62 @@
     * **Crypto:**  when a company uses multiple algorithms to protect their data.
     * **Controls:** implements a compensating (backup) control that could replace a primary control should it fail.
 # 2.6 Explain the security implications of embedded and specialized systems.
-* **Embedded systems**
-    * **Raspberry Pi:**
-    * **Field-programmable gate array (FPGA):**
-    * **Arduino:**
-* **Supvervisory control and data acquisition (SCADA)/Industrial control system (ICS)**
-    * **Facilities:**
-    * **Industrial:**
-    * **Manufacturing:**
-    * **Energy:**
-    * **Logistics:**
-* **Internet of Things (IoT)**
-    * **Sensors:**
-    * **Smart devices:**
-    * **Wearables:**
-    * **Facility automation:**
-    * **Weak defaults:**
+* **Embedded systems:** a computer system that has a dedicated function within a larger mechanical or electronic system.
+    * **Raspberry Pi:** a small, single-board computer.
+    * **Field-programmable gate array (FPGA):** a type of integrated circuit that can be reprogrammed after manufacturing.
+    * **Arduino:** an electronic board with a simple microcontroller.
+* **Supvervisory control and data acquisition (SCADA)/Industrial control system (ICS)** SCADA; used for controlling, monitoring, and analyzing industrial devices and processes. ICS; an electronic control system and associated instrumentation used for industrial process control.
+    * **Facilities**
+    * **Industrial**
+    * **Manufacturing**
+    * **Energy**
+    * **Logistics**
+    > In an industrial, manufacturing, or public utility settings, equipment is often network-connected and monitored. It can all be centrally configured, controlled, and monitored from a computer using a SCADA network.
+* **Internet of Things (IoT):** a class of devices connected to the internet in order to provide automation, remote control, or AI processing in a home or business setting.
+    * **Sensors:** gather information so devices can be used remotely and data can be shared in real time.
+    * **Smart devices:** mobile devices that offer customization options, typically through installing apps, and may use on-device or cloud AI processing.
+    * **Wearables:** include devices like fitness trackers or smart watches.
+    * **Facility automation:** in a large facility, IoT devices can manage the heating and AC, lights, and motion/fire/water detection.
+    * **Weak defaults:** devices put on a network to manage have a default username and password that are often open and available for anybody to use.
+    > Botnets and offensive security tools will find and exploit devices with these still in place.
 * **Specialized**
-    * **Medical systems:**
-    * **Vehicles:**
-    * **Aircraft:**
-    * **Smart meters:**
-* **Voice over IP (VoIP):**
-* **Heating, ventilation, air conditioning (HVAC):**
-* **Drones:**
-* **Multifunction printer (MFP):**
-* **Real-time operating system (RTOS):**
-* **Surveillance systems:**
-* **System on chip (SoC):**
+    * **Medical systems:** covers everything from small, implantable devices, to tools for measuring vitals and MRI machines.
+    * **Vehicles:** modern vehicles have sensors monitoring functions or surroundings.
+    * **Aircraft:** similar set of specialized embedded system; many different networks and sensors communicating with one another.
+    * **Smart meters:** systems that monitor water, electricity, and other types of utility use.
+* **Voice over IP (VoIP):** a technology that allows you to make voice calls using a broadband internet connection instead of a regular (or analog) phone line.
+> IP phones can be entry points into a business network and are susceptible to data network attacks.
+* **Heating, ventilation, air conditioning (HVAC):** large HVAC implementations have computers that monitor and maintain all of the HVAC for the facility.
+> Play a huge role in human safety, so security in HVAC and HVAC monitoring systems is critical.
+* **Drones:** may be manually controlled or have autonomous functions not requiring human intervention.
+> A federal license is required to fly ones of a specific size in the United States.
+* **Multifunction printer (MFP):** MFP can have scanning, fax, and printing capabilities with a single embedded device.
+> Scans and faxes are stored somewhere on the device, usually within the internal memory. Logs on the device can also provide an attacker with a list of users and endpoints the device has communicated with.d
+* **Real-time operating system (RTOS):** an OS that guarantees real-time applications a certain capability within a specified deadline.
+> Designed for critical systems and for devices like microcontrollers that are timing-specific.
+* **Surveillance systems:** cameras and monitoring systems. May have motion sensitive functionality, or even object tracking capabilities.
+* **System on chip (SoC):** a complete computer system miniturized on a single integrated circuit, providing full computing platform on a chip.
 * **Communication considerations**
-    * **5G:**
-    * **Narrow-band:**
-    * **Baseband radio:**
-    * **Subscriber identity module (SIM) cards:**
-    * **Zigbee:**
+    * **5G:** faster speeds and lower latency.
+    > Doesn't identify each user through their SIM card, unlike 4G.
+    > Because scale of IoT endpoint counts on 5G is exponentially greater, DDoS is a concern.
+    * **Narrow-band:** signals that occupy a narrow range of frequencies or have that have a small fractional bandwidth.
+    > Examples include RFID or keyless vehicle entry products.
+    * **Baseband radio:** used for audio signals over a radio frequency. Transmitted over a single channel.
+    > Example: Truck drivers communicate with one another on a specific channel.
+    * **Subscriber identity module (SIM) cards:** small computer chips that contain the information about mobile subscription. Allows users to connect to telecommunication provider to make calls, sends texts, or use the internet.
+    * **Zigbee:** a short-tange wireless PAN technology, developed to support automation, machine-to-machine communication, and remote control and monitoring of IoT devices.
 * **Constraints**
-    * **Power:**
-    * **Compute:**
-    * **Network:**
-    * **Crypto:**
+    * **Power:** limited size.
+    * **Compute:** remote/unusual locations results in limited compute capacity and low power consumption.
+    * **Network:** embedded systems are not scalable, and some can only communicate through Wi-Fi or Bluetooth, and are short-ranged.
+    * **Crypto:** PKI needs at least a 32-bit processor and embedded devices are limited to 8 or 16.
     * **Inability to patch:**
-    * **Authentication:**
-    * **Range:**
-    * **Cost:**
-    * **Implied trust:**
+    * **Authentication:** some embedded devices are incapable of joining a network and may only support local logon.
+    > Making changing defaults a priority.
+    * **Range:** many have a very short range and are not flexible or scalable in terms of management and use.
+    * **Cost:** are mainly customized and function-specific to keep costs down, making upgrade to new hardware versions impractical.
+    * **Implied trust:** there is implied trust that a system functions as documented.
+    > Asking manufacturer if they have been penetration tested is important.
 # 2.7 Explain the importance of physical security controls.
 # 2.8 Summarize the basics of cryptographic concepts.
