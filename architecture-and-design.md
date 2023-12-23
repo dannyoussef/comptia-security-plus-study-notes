@@ -262,4 +262,54 @@
     * **Implied trust:** there is implied trust that a system functions as documented.
     > Asking manufacturer if they have been penetration tested is important.
 # 2.7 Explain the importance of physical security controls.
+* **Bollards/barricades:**
+* **Access control vestibules:**
+* **Badges:**
+* **Alarms:**
+* **Signage:**
+* **Cameras**
+    * **Motion recognition:**
+    * **Object detection:**
+* **Closed-circuit television (CCTV):**
+* **Industrial camoflauge:**
+* **Personnel**
+    * **Guards:**
+    * **Robot sentries:**
+    * **Reception:**
+    * **Two-person integrity/control:**
+* **Locks**
+    * **Biometrics:**
+    * **Electronic:**
+    * **Physical:**
+    * **Cable locks:**
+* **USB data blocker:**
+* **Lighting:**
+* **Fencing:**
+* **Fire suppression:**
+* **Sensors**
+    * **Motion detection:**
+    * **Noise detection:**
+    * **Proximity Reader:**
+    * **Moisture detection:**
+    * **Cards:**
+    * **Temperature:**
+* **Drones:**
+* **Visitor logs:**
+* **Faraday cages:**
+* **Air gap:**
+* **Screened subnet (previously known as demilitarized zone):**
+* **Protected cable distribution:**
+* **Secure areas:**
+    * **Air gap:**
+    * **Vault:**
+    * **Safe:**
+    * **Hot aisle:**
+    * **Cold aisle:**
+* **Secure data destruction:**
+    * **Burning:**
+    * **Shredding:**
+    * **Pulping:**
+    * **Pulverizing:**
+    * **Degaussing:**
+    * **Third-party solutions:**
 # 2.8 Summarize the basics of cryptographic concepts.
