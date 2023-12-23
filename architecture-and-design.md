@@ -204,5 +204,49 @@
     * **Crypto:**  when a company uses multiple algorithms to protect their data.
     * **Controls:** implements a compensating (backup) control that could replace a primary control should it fail.
 # 2.6 Explain the security implications of embedded and specialized systems.
+* **Embedded systems**
+    * **Raspberry Pi:**
+    * **Field-programmable gate array (FPGA):**
+    * **Arduino:**
+* **Supvervisory control and data acquisition (SCADA)/Industrial control system (ICS)**
+    * **Facilities:**
+    * **Industrial:**
+    * **Manufacturing:**
+    * **Energy:**
+    * **Logistics:**
+* **Internet of Things (IoT)**
+    * **Sensors:**
+    * **Smart devices:**
+    * **Wearables:**
+    * **Facility automation:**
+    * **Weak defaults:**
+* **Specialized**
+    * **Medical systems:**
+    * **Vehicles:**
+    * **Aircraft:**
+    * **Smart meters:**
+* **Voice over IP (VoIP):**
+* **Heating, ventilation, air conditioning (HVAC):**
+* **Drones:**
+* **Multifunction printer (MFP):**
+* **Real-time operating system (RTOS):**
+* **Surveillance systems:**
+* **System on chip (SoC):**
+* **Communication considerations**
+    * **5G:**
+    * **Narrow-band:**
+    * **Baseband radio:**
+    * **Subscriber identity module (SIM) cards:**
+    * **Zigbee:**
+* **Constraints**
+    * **Power:**
+    * **Compute:**
+    * **Network:**
+    * **Crypto:**
+    * **Inability to patch:**
+    * **Authentication:**
+    * **Range:**
+    * **Cost:**
+    * **Implied trust:**
 # 2.7 Explain the importance of physical security controls.
 # 2.8 Summarize the basics of cryptographic concepts.
