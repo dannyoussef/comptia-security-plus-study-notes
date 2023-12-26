@@ -262,57 +262,74 @@
     * **Implied trust:** there is implied trust that a system functions as documented.
     > Asking manufacturer if they have been penetration tested is important.
 # 2.7 Explain the importance of physical security controls.
-* **Bollards/barricades:**
-* **Access control vestibules:**
-* **Badges:**
-* **Alarms:**
-* **Signage:**
-* **Cameras**
-    * **Motion recognition:**
-    * **Object detection:**
-* **Closed-circuit television (CCTV):**
-* **Industrial camoflauge:**
+* **Bollards/barricades:** short posts used to divert vehicle traffic from an area or road. Can be placed in front of a building to stop a car from driving at desired point.
+* **Access control vestibules:** turnstile devices that only allow one person in at a time
+> Mantraps are a common example.
+* **Badges:** a form of identification that is retained (captured/photocopied) and used to regulate entry into buildings or restricted areas.
+> A visitor may receive a different badge then that of an employee's (e.g., different color), and return it when they leave.
+* **Alarms:** burglar alarms that triggers when someone attempts to break into non-occupied premises and notifies the monitoring company or police.
+> Fire alarms or smoke detectors should also be present in company buildings so that people are notified to leave, in case a fire breaks out.
+* **Signage:** used as a deterrent to prevent possible intruders, warning them that they are entering a secure area.
+* **Cameras:** often used as a detective and deterrent control for physical security.
+    * **Motion recognition:** usually set up in areas around the perimiter and on doorways to detect motion.
+    * **Object detection:** can be set up to detect objects both day and night to alert the security team by raising an alarm.
+* **Closed-circuit television (CCTV):** can be used to compare the audit trails and access logs with a visually recorded history of the events.
+> Audit trails and visitor access logs are useful tools for managing physical access controls.
+* **Industrial camoflauge:** designing a facility or other resources to obscure it from identification via aerial photography and/or other means of observation.
+> Entrances will often be disguised as well to prevent visual identification by potential attackers or intruders.
 * **Personnel**
-    * **Guards:**
-    * **Robot sentries:**
-    * **Reception:**
-    * **Two-person integrity/control:**
+    * **Guards:** typicall work at the entrance reception desk to check the identity of people entering the building to stop unauthorized access.
+    * **Robot sentries:** autonomous mobile security robots that can be used to patrol the facility perimeter and raise warnings to deter any intruders or alert security staff.
+    * **Reception:** the desk/station at facility entrance where guards will check employees and visitors.
+    * **Two-person integrity/control:** requiring the presence of at least two authorized persons to enable access to certain resources.
+    > Ensures that no single person would have access to any particular asset in the building, reducing tghe risk of a malicious insider attack.
 * **Locks**
-    * **Biometrics:**
-    * **Electronic:**
-    * **Physical:**
-    * **Cable locks:**
-* **USB data blocker:**
-* **Lighting:**
-* **Fencing:**
-* **Fire suppression:**
+    * **Biometrics:** something unique about a person or their behavior (e.g., fingerprint).
+    * **Electronic:** something a person has (e.g., a PIN code).
+    * **Physical:** a device that prevents access to data, such as a key lock switch on a computer.
+    * **Cable locks:** attached to laptops or tablets to secure them against theft.
+* **USB data blocker:** device that blocks the data pins on the USB device, which prevents attacks in unsecure scenarios.
+> Can prevent juice jacking, where data is stolen when you are chargin a USB device in a public are.
+* **Lighting:** attackers avoid any place that may be lit.
+> Proper lighting is important in environments that need to be monitored 24 hours a day. Consider lighting angles if there are shadows and some type of facial recognition is enabled.
+* **Fencing:** protect resources for which access should be restricted.
+> Height and material will factor in how effective a fence will be in access prevention: 3-4 feet deters the casual trespasser, 6-7 may be too difficult to climb easily and may block vision, 8-feet (topped with barbed wire) will deter determined intruders.
+* **Fire suppression:** human safety is priority. Proper monitoring and warning, consisting of fire detection and fire alarms, and clearly marked fire exits ensure employees and visitors to evacuate safely from facilities in the event of a fire.
 * **Sensors**
-    * **Motion detection:**
-    * **Noise detection:**
-    * **Proximity Reader:**
-    * **Moisture detection:**
-    * **Cards:**
-    * **Temperature:**
-* **Drones:**
-* **Visitor logs:**
-* **Faraday cages:**
-* **Air gap:**
-* **Screened subnet (previously known as demilitarized zone):**
-* **Protected cable distribution:**
+    * **Motion detection:** when someone is walking past a building and the motion sensors detect movement and turn on lights to discourage would-be intruders.
+    * **Noise detection:** noise monitoring devices can detect excessive noise to detect a variety of issues, depending on placement, including intruders or other negative events.
+    * **Proximity Reader:** commonly used to gain access to doors, or door locks.
+    * **Moisture detection:** humidity sensors measure the amount of moisture in the air.
+    > Too much moisture in the air could lead to condensation, which can damage sensitive equipment and lead to formation of harmful mold.
+    * **Cards:** moving the proximity card closer to the proximity reader, info on the card is checked, and then the system can either allow or disallow access through that lock.
+    * **Temperature:** temperature sensors detect that it is getting too hot, it can trigger corrective action, such as injecting cold air into a space.
+    > Critical systems could fail if the temperature gets too hot.
+* **Drones:** used to monitor facility perimeters and conduct constant surveillance over large areas.
+> Can also be sent out as a response mechanism before personnel can respond and conduct an initial site assessment.
+* **Visitor logs:** required if a facility employs restricted areas to control physical security. Guards at the main entrance will ask visitors to complete the visitor logs, and then provide some form of identification.
+> An escort is often assigned to visitors, and their access and activities are monitored closely.
+* **Faraday cages:** an enclosure used to block electromagnetic fields. Prevents wireless or cellular phones from working inside the enclosure.
+> Signals, such as a HF RFID, are likely to break through a Faraday cage.
+* **Air gap:** a security measure that involves isolating a computer or network and preventing it from establishing an external connection.
+> The only way to insert or removed data from an air-gapped machine is by using removable media (e.g., USB or CD-ROM drive).
+* **Screened subnet (previously known as demilitarized zone):** a boundary layer between the LAN and the WAN that holds information that companies may want people from the internet to access.
+> Front-end web and email servers may reside in a screened subnet. Systems with sentive data or hosting identiy and access management would not (e.g., Active Directory).
+* **Protected cable distribution:** also known as a protected distribution system (PDS); encases network cabling within a carrier. Enables data to be securely transferred directly between two high-security areas through an area of lower security.
 * **Secure areas:**
-    * **Air gap:**
-    * **Vault:**
-    * **Safe:**
-    * **Hot aisle:**
-    * **Cold aisle:**
+    * **Air gap:** create "air gaps" between some systems are used internally to separate confidential systems from standard systems.
+    * **Vault:** where data can be encrypted and stored in the cloud, enabling an extra-secure storage area.
+    * **Safe:** safes for the storage of laptops and tablets.
+    * **Hot aisle:** hot air is allowed to escape through a vent or chimney (or may be captured and channeled back to HVAC unit).\
+    > The rear of the servers face each other, pushing hot air out into the hot aisles.
+    * **Cold aisle:** where the cold air enters and is contained, it faces the front of the servers.
 * **Secure data destruction:**
-    * **Burning:**
-    * **Shredding:**
-    * **Pulping:**
-    * **Pulverizing:**
-    * **Degaussing:**
-    * **Third-party solutions:**
-# 2.8 Summarize the basics of cryptographic concepts.\
+    * **Burning:** burning with fire, as with an incinerator on site or via a third-party vendor providing a destruction certificate.
+    * **Shredding:** can shred a metal hard drive into powder or a paper into shreds, making reassembly much more difficult.
+    * **Pulping:** a technique opf destroying paper documents by soaking them in water and grinding them into pulp, used if burning is not an option.
+    * **Pulverizing:** using a hammer and smashing drive into pieces, or drill through all the platters.
+    * **Degaussing:** creates a strong magnetic field that erases data on some media and destroys electronics.
+    * **Third-party solutions:** a third-party vendor may provide data destruction services.
+# 2.8 Summarize the basics of cryptographic concepts.
 * **Digital signatures:**
 * **Key length:**
 * **Key stretching:**
