@@ -330,52 +330,63 @@
     * **Degaussing:** creates a strong magnetic field that erases data on some media and destroys electronics.
     * **Third-party solutions:** a third-party vendor may provide data destruction services.
 # 2.8 Summarize the basics of cryptographic concepts.
-* **Digital signatures:**
-* **Key length:**
-* **Key stretching:**
-* **Salting:**
-* **Hashing:**
-* **Key exchange:**
-* **Elliptic-curve cryptography:**
-* **Perfect forward secrecy:**
+* **Digital signatures:** a mathematical algorithm routinely used to validate the authenticity and integrity of a message.
+> Similar to handwritten signatures on printed documents that identify individuals, but provide more security benefits.
+* **Key length:** larger keys tend to be more secure, as there are more possible key combinations.
+* **Key stretching:** processes used to make a possibly weak key more secure by increasing the resources it takes to test each possible key (e.g., making it longer and/or more random).
+* **Salting:** a unique value that can be added to the end of a password to create a different hash value.
+* **Hashing:** a one-way function that scrambles plain text to produce a unique message digest.
+* **Key exchange:** cryptographic keys are exchanged between two parties, allowing use of a cryptographic algorithm.
+* **Elliptic-curve cryptography:** a small, fast key that is used for encryption in small mobile devices.
+> Curves in ECC are easier to calculate than the large primes typical in asymmetric encryption.
+* **Perfect forward secrecy:** a feature of specific key agreement protocols that assures session keys will not be compromised if long-term secrets (private key) used in session key exchange are compromised.
+> Indicates that a cryptographic system generats random public keys for each session and it does not use a deterministic algorithm in the process.
+> Protects past communication, reducing motivation for an attacker to compromise keys.
 * **Quantum**
-    * **Communications:**
-    * **Computing:**
-* **Post-quantum:**
-* **Ephemeral:**
+    * **Communications:** use photons to transmit qubits between remote places.
+    * **Computing:** harnesses the law of quantum mechanics to solve problems too complex for classical computers.
+* **Post-quantum:** refers to crytographic algorithms (usually public-key algorithms) that are thought to be secure against an attack by a quantum computer.
+> The goal is to develop cryptographic systems that are secure against both quantum and classical computers, and can interopate with existing communications protocols and networks.
+* **Ephemeral:** a cryptographic key that is generated for each execution of a key-establishment process and that meets other requirements of the key type.
+> Systems use these key pairs for a single session and then discard them.
 * **Modes of operation**
-    * **Authenticated:**
-    * **Unauthenticated:**
-    * **Counter:**
+    * **Authenticated:** a block cipher mode of operation which simultaneously provides confidentiality and authenticity (integrity) assurances on the data.
+    * **Unauthenticated:** insecure as an attacker can modify the ciphertext and cause the plaintext to  change.
+    * **Counter:** uses an arbitrary number (the counter) that changes with each block of text encrypted.
 * **Blockchain**
-    * **Public ledgers:**
+    * **Public ledgers:** a record-keeping system that manages participants' identities anonymously, their respective cryptocurrency balances, and a record of all the genuine transactions conducted between network participants.
 * **Cipher suites:**
-    * **Stream:**
-    * **Block:**
-* **Symmetric vs. asymmetric:**
-* **Lightweight cryptography:**
-* **Steganography**
-    * **Audio:**
-    * **Video:**
-    * **Image:**
-* **Homomorphic encryption:**
+    * **Stream:** a symmetric key cipher where plaintext digits are combined with a pseudorandom cipher digit stream (keystream).
+    * **Block:** a method of encrypting text in which a cryptographic key and algorithm are applied to a block of data at once as a group, rather than to one bit at a time.
+* **Symmetric vs. asymmetric:** symmetric relies on the use of a shared secret key, but lacks support for scalability, easy key distribution, and non-repudiation. Asymmetric; public-private key pairs for communication between parties, supports scalability, easy key distribution, and non-repudiation.
+* **Lightweight cryptography:** an encryption method that features a small footprint and/or low computational complexity.
+* **Steganography:** the practice of representing information within another message or physical object, in such a manner that the presence of the information is not evident to human inspection.
+    * **Audio:** an approach of hiding information within an audio signal.
+    * **Video:** the process of hiding secret information inside videos.
+    * **Image:** involves hiding data behind digital images.
+* **Homomorphic encryption:** the conversion of data into ciphertext that can be analyzed and worked with as if it were still in its original form.
 * **Common use cases**
-    * **Low power devices:**
-    * **Low latency:**
-    * **High resiliency:**
-    * **Supporting confidentiality:**
-    * **Supporting integrity:**
-    * **Supporting obfuscation:**
-    * **Supporting authentication:**
-    * **Supporting non-repudiation:**
+    * **Low power devices:** devices often use ECC for encryption, as it uses a small key.
+    > IoT devices do not have the processing power for conventional encryption.
+    * **Low latency:** means "encryption and decryption should not take a long time." 
+    > A VPN concentrator or encryption accelerator cards can improve efficiency.
+    * **High resiliency:** uses the most secure encryption algorithm practical to prevent the encryption key from being cracked by attackers.
+    * **Supporting confidentiality:** encryption should be implemented for exchange of any sensitive data, and in a way that ensures only authorized parties can view.
+    * **Supporting integrity:** ensuring file data has not been tampered with, and that communications are not altered in transit.
+    * **Supporting obfuscation:** commonly used in source code to ensure it cannot be read by anyone who steals it.
+    > Steganography can be used to obscure data.
+    * **Supporting authentication:** a single-factor username and password as they are not as secure as multifactor usernames and passwords.
+    > MFA for user authentication, certificate-based authentication for devices.
+    * **Supporting non-repudiation:** providing proof of the origin, authenticity, and integrity of data.
 * **Limitations**
-    * **Speed:**
-    * **Size:**
-    * **Weak keys:**
-    * **Time:**
-    * **Longevity:**
-    * **Predictability:**
-    * **Reuse:**
-    * **Entropy:**
-    * **Computational overheads:**
-    * **Resource vs. security constraints:**
+    * **Speed:** applications and hardware must be able to keep pace with the selected encryption.
+    * **Size:** need enough memory, storage, and network to support the encryption information.
+    * **Weak keys:** larger keys are generally stronger and thus more difficult to break.
+    * **Time:** encryption and hashing takes time. Large amounts of data and asymmetric encryption take more time than small data and symmetric encryption.
+    * **Longevity:** consider how long encryption algorithms selected can be used.
+    * **Predictability:** random number generation that can't be easily predicted is crucial.
+    * **Reuse:** using the same key is commonly seen in a number of encryption mechanisms. If an attacker gains access to the key, they can decrypt data encrypted with it.
+    * **Entropy:** a measure of the randomness or diversity of a data-generating function. Data with full entropy is completely random with no meaningful patterns.
+    * **Computational overheads:** resource planning is important to avoid overhead (any combination of excess or indirect computation time).
+    * **Resource vs. security constraints:** more secure the encryption used and the higher the key length, the more processing power and memory the server will need.
+    > Requires balance between algorithms and hardware selections.
