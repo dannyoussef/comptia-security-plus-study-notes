@@ -27,6 +27,48 @@
     * **Network address allocation:** SNMPv3.
     * **Subscription services:** HTTPS, TLS/SSL.
 # 3.2 Given a scenario, implement host or application security solutions.
+* **Endpoint protection**
+    * **Antivirus:**
+    * **Anti-malware:**
+    * **Endpoint detection and response (EDR):**
+    * **DLP:**
+    * **Next-generation firewall (NGFW):**
+    * **Host-based intrusion prevention systems (HIPS):**
+    * **Host-based intrusion detection system (HIDS):**
+    * **Host-based firewall:**
+* **Boot integrity:**
+    * **Boot security/Unified Extensible Firmware Interface (UEFI):**
+    * **Measured boot:**
+    * **Boot attestation:**
+* **Database** 
+    * **Tokenization:**
+    * **Salting:**
+    * **Hashing:**
+* **Application security**
+    * **Input validations:**
+    * **Secure cookies:**
+    * **Hypertext Transfer Protocol (HTTP) headers:**
+    * **Code signing:**
+    * **Allow list:**
+    * **Block list/deny list:**
+    * **Secure coding practices:**
+    * **Static code analysis:**
+        * **Manual code review:**
+    * **Dynamic code analysis:**
+    * **Fuzzing:**
+* **Hardening**
+    * **Open ports and services:**
+    * **Registry:**
+    * **Disk encryption:**
+    * **OS:**
+    * **Patch management**
+        * **Third-party updates:**
+        * **Auto-update:**
+* **Self-encrypting drive (SED)/full-disk encryption (FDE)**
+    * **Opal:**
+* **Hardware root of trust:**
+* **Trusted Platform Module (TPM):**
+* **Sandboxing:**
 # 3.3 Given a scenario, implement secure network designs.
 # 3.4 Given a scenario, install and configure wireless security settings.
 # 3.5 Given a scenario, implement secure mobile solutions.
