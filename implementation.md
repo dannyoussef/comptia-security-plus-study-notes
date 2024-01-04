@@ -89,70 +89,84 @@
 * **Sandboxing:** security practice where you run, observe, and analyze code in a safe, isolated environment on a network that mimics end-user operating environments.
 > Also, facilitates investigating dangerous malware.
 # 3.3 Given a scenario, implement secure network designs.
-* **Load balancing**
-    * **Active/active:**
-    * **Active/passive:**
-    * **Scheduling:**
-    * **Virtual IP:**
-    * **Persistence:**
+* **Load balancing:** a network load balancer (NLB) is a device that is used to direct traffic to an array of web servers, application servers, or other service endpoints.
+    * **Active/active:** the load balancers act like an array, dealing with the traffic together as both are active.
+    > A single LB failure may degrade performance.
+    * **Active/passive:** the active node is fulfilling load balancing duties and the passive node is listening and monitoring the active node.
+    > If the active node fails, the passive node takes over, providing redundancy.
+    * **Scheduling:** determines how the load is distributed by the load balancer.
+    * **Virtual IP:** eliminates a host's dependency upon individual network interfaces.
+    > Web traffic comes into the NLB from the VIP on the front end, and the request is sent to one of the web servers in the server farm (on the backend).
+    * **Persistence:** also known as a sticky session, makes it possible for the LB to identify requests coming from the same client and to always send those requests to the same server.
 * **Network segmentation**
-    * **Virtual local area network (VLAN):**
-    * **Screened subnet (previously known  as demilitarized zone):**
-    * **East-west traffic:**
-    * **Extranet:**
-    * **Intranet:**
-    * **Zero trust:**
-* **Virtual private network (VPN)**
-    * **Always-on:**
-    * **Split tunnel vs. full tunnel:**
-    * **Remote access vs. site-to-site:**
-    * **IPSec:**
-    * **SSL/TLS:**
-    * **HTML5:**
-    * **Layer 2 tunneling protocol (L2TP):**
-* **DNS:**
-* **Network access control (NAC)**
-    * **Agent and agentless:**
-* **Out-of-band management:**
-* **Port security**
-    * **Broadcast storm prevention:**
-    * **Bridge Protocol Data Unit (BPDU) guard:**
-    * **Loop prevention:**
+    * **Virtual local area network (VLAN):** a collection of devices that communicate with one another as if they made up a single physical LAN.
+    * **Screened subnet (previously known  as demilitarized zone):** an extranet for public consumption. Serves as the buffer and separates the internal and external areas.
+    > A subnet is placed between two routers or firewalls. Used to control traffic and isolate static/sensitive environments.
+    * **East-west traffic:** where traffic moves laterally between servers within a data center.
+    > North-south traffic moves outside of the data center.
+    * **Extranet:** a section of an organization's network that has been sectioned off to act as an intranet for the private network, but also serves information to external business partners or the public Internet.
+    * **Intranet:** a private network designed to host the information internal to an organization.
+    * **Zero trust:** networks are segmented into smaller islands where specific workloads are contained.
+    > Used to minimize the impact of unauthorized access to data.
+* **Virtual private network (VPN):** extends a private network across a public network, enabling users and devices to send and receive data across shared or public networks as if their computing devices were directly connected to the private network.
+    * **Always-on:** a low-latency point-to-point connection between two sites. A tunnel between two gateways that is "always connected."
+    * **Split tunnel vs. full tunnel:** split tunnel uses VPN for traffic destined for the corporate network only, and Internet traffic direct through its normal route. Full tunnel means using VPN for all traffic, both to the Internet and corporate network.
+    * **Remote access vs. site-to-site:** with remote access, a connection is initiated from a user's PC or laptop for a connection of shorter duration. With site-to-site, IPSec site-to-site VPN uses an always-on mode where both packet header and payload are encrypted.
+    * **IPSec:** adds encryption and authentication to make the Internet Protocol more secure.
+    * **SSL/TLS:** works with legacy systems and uses SSL certificates for authentication.
+    * **HTML5:** similar to the SSL VPN, it uses certificates for authentication.
+    * **Layer 2 tunneling protocol (L2TP):** most secure tunneling protocol that can use certificates, Kerberos authentication, or a pre-shared key.
+* **DNS:** a hierarchical naming system that resolves a hostname to an IP address.
+* **Network access control (NAC):** a security solution that enforces policy on devices that access networks to increase network visibility and reduce risk.
+    * **Agent and agentless:** agent-based NAC requires the installation of a software agent on every device that needs network access. Some OSs include NAC as part of the OS itself, with no additional agent required (agentless).
+* **Out-of-band management:** OoB is a concept that uses an alternate communicate path to manage network infrastructure devices.
+> Enables IT to work around problems that may be occuring on the network. 
+* **Port security:** enables you to configure each switch port with a unique list of the MAC addresses of devices that are authorized to access the network through that port.
+    * **Broadcast storm prevention:** a broadcast storm occurs a network is overwhelmed by a large number of broadcast packets. Spanning Tree Protocol (STP) prevents this from happening by forwarding, listening, or blocking some of the ports.
+    * **Bridge Protocol Data Unit (BPDU) guard:** BPDUs are frames that contain information about the STP. A BPDU guard enables the STP to stop attacks that attempt to spoof the root bridge so that the STP is recalculated.
+    * **Loop prevention:** loop prevention protocols are essential for avoiding network congestion, instability, and performance degradation caused by the formation of loops in a LAN switching environment.
     * **Dynamic Host Configuration Protocol (DHCP) snooping:**
-    * **Media access control (MAC) filtering:**
+    * **Media access control (MAC) filtering:** a list of authorized wireless client interface MAC addresses. Used by a wireless access point to block access to all non-authorized devices.
 * **Network appliances**
-    * **Jump servers:**
+    * **Jump servers:** typically placed on a screened subnet, allows admins to connect remotely to the network.
     * **Proxy servers**
-        * **Forward:**
-        * **Reverse:**
+        * **Forward:** server that controls requests from clients seeking resources on the internet or an external network.
+        * **Reverse:** placed on a screened subnet, performs the authentication and decryption of a secure session to enable it to filter the incoming traffic.
     * **Network-based intrusion detection system (NIDS)/network-based intrustion prevention system (NIPS)**
         * **Signature-based:**
-        * **Heuristic/behavior:**
-        * **Anomaly:**
-        * **Inline vs. passive:**
-    * **HSM:**
-    * **Sensors:**
-    * **Collectors:**
-    * **Aggregators:**
+        * **Heuristic/behavior:** creates a baseline of activity to identify normal behavior and then measures system performance against the baseline to detect abnormal behavior.
+        * **Anomaly:** similar to behavior-based.
+        * **Inline vs. passive:** with inline, NIDS/NIPS placed on or near the firewall as an additional layer of security. With passive, traffic does not go through the NIDS/NIPS.
+    * **HSM:** a hardware security module (HSM) is a physical computing device that safeguards and manages digital keys, performs encryption and decryption functions for digital signatures, strong authentication, and other crytographic functions.
+    > Like a TPM, but are often removable or external devices.
+    * **Sensors:** designed to handle traffic at wire speed and monitor network traffic.
+    * **Collectors:** a network appliance for the collection, storage, and analysis of flow data from flow-enabled network devices (LB, switches, and routers).
+    * **Aggregators:** cost-effective solutions for the tapping and aggregating of traffic to feed to network monitoring or cybersecurity tools.
     * **Firewalls**
-        * **Web application firewall (WAF):**
-        * **NGFW:**
-        * **Stateful:**
-        * **Stateless:**
-        * **Unified threat management (UTM):**
-        * **Network address translation (NAT) gateway:**
-        * **Content/URL filter:**
-        * **Open-source vs. proprietary:**
-        * **Hardware vs. software:**
-        * **Appliance vs. host-based vs. virtual:**
-* **Access control list (ACL):**
+        * **Web application firewall (WAF):** protect web applications by filtering and monitoring HTTP traffic between a web application and the Internet.
+        > Typicallys protects again common attacks like XSS, CSRF, and SQL injection.
+        * **NGFW:** a "deep-packet inspection" firewall that moves beyond port/protocol inspection and blocking. Adds application-level inspection, intrusion prevention, and brings intelligence from outside the firewall.
+        * **Stateful:** can watch traffic streams from end to end. Are aware of communication paths and can implement various IP security functions such as tunnels and encryption.
+        > Better at identifying unauthorized and forged communications.
+        * **Stateless:** watch network traffic and restrict or block packets based on source and destination addresses or other static values. Not aware of traffic patterns or data flows.
+        > Typically faster and performs better under heavier traffic loads.
+        * **Unified threat management (UTM):** a multifunction device (MFD) composed of several security features in addition to a firewall. May include IDS, IPS, a TLS/SSL proxy, web filtering, QoS management, bandwidth throttling, NAT, VPN anchoring, and antivirus.
+        * **Network address translation (NAT) gateway:** allows private subnets to communicate with other cloud services and the Internet but hides the internal network from Internet users. The NAT gateway has the Network Access Control List (NACL) for the private subnets.
+        * **Content/URL filter:** looks at the content on the requested web page and blocks requests depending on filters. Used to block inappropriate content in the context of the situation.
+        * **Open-source vs. proprietary:** open-source; the license is freely available and allows access to the source code, though it might ask for an optional donation. No vendor support, so third-party support may be necessary. E.g., pfsense. Proprietary; are more expensive but tend to provide mode/better protection and more functionality and support (at a cost). No source code access. E.g., Cisco, Checkpoint, Palo Alto, Barracuda.
+        * **Hardware vs. software:** hardware; purpose-built network hardware. May offer more configurable support for LAN and WAN connections. Often has superior throughput versus software because it is hardware designed for the speeds and connections common to an enterprise network. Software; might install on your own hardware. Provide flexibility to palce firewalls anywhere you'd like in your organization. On servers and workstations, you can run a host-based firewall.
+        * **Appliance vs. host-based vs. virtual:** application; typically catered specifically to application communications, that is, HTTP or web traffic. E.g., NGFW. Host-based; an application installed on a host OS, such as Windows or Linux, both client and server OSs. Virtual; in the cloud, firewalls are implemented as virtual network appliances (VNA). Available from both the CSP directly and third-party partners (commercial firewall vendors).
+* **Access control list (ACL):** a list used to allow or deny traffic. If no allow rules, last rule (deny) is applied (implicitly).
 * **Route security:**
-* **Quality of service (QoS):**
-* **Implications of IPv6:**
-* **Port spanning/port mirroring**
-    * **Port taps:**
-* **Monitoring services:**
-* **File integrity monitors:**
+* **Quality of service (QoS):** ensures that applications have the bandwidth they need to operate by prioritizing traffic based on importance and function.
+> Traffic of real-time functions (e.g., voice and video streaming) might be given greater priority.
+* **Implications of IPv6:** many more IPv6 addresses compared to IPv4. More difficult to perform a complete port scan or interface scan. Less need to perform port address translation (PAT) or outbound network address translation (NAT) on the network. The Address Resolution Protocol (ARP) is removed.
+> Does not imply IPv6 is more or less secure, but changes the attack vectors.
+* **Port spanning/port mirroring:** sends a copy of all data that arrives at a port to another device or sensor for investigation later or in near real-time.
+    * **Port taps:** a dedicated hardware device, which provides a way to access the data flowing across a computer network.
+* **Monitoring services:** often an outsourced security operations center (SOC) function to provide 24x7 monitoring and alert or remediate issues after business hours.
+* **File integrity monitors:** monitors and detects changes to files that should not be modified automating notification (and potentially remediation).
+> Commonly monitors files that would never change things like your OS files, where changes indicate some type of malicious activity.
 # 3.4 Given a scenario, install and configure wireless security settings.
 # 3.5 Given a scenario, implement secure mobile solutions.
 # 3.6 Given a scenario, apply cybersecurity solutions to the cloud.
