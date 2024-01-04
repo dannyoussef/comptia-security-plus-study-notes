@@ -168,6 +168,30 @@
 * **File integrity monitors:** monitors and detects changes to files that should not be modified automating notification (and potentially remediation).
 > Commonly monitors files that would never change things like your OS files, where changes indicate some type of malicious activity.
 # 3.4 Given a scenario, install and configure wireless security settings.
+* **Cryptographic protocols**
+    * **WiFi Protected Access 2 (WPA2):**
+    * **WiFi Protected Access 3 (WPA3):**
+    * **Counter-mode/CBC-MAC Protocol (CCMP):**
+    * **Simultaneous Authentication of Equals (SAE):**
+* **Authentication protocols**
+    * **Extensible Authentication Protocol (EAP):**
+    * **Protected Extensible Authentication Protocol (PEAP):**
+    * **EAP-FAST:**
+    * **EAP-TLS:**
+    * **EAP-TTLS:**
+    * **IEEE 802.1X:**
+    * **Remote Authentication Dial-in User Service (RADIUS) Federation:**
+* **Methods**
+    * **Pre-shared key (PSK) vs. Enterprise vs. Open:**
+    * **WiFi Protected Setup (WPS):**
+    * **Captive portals:**
+* **Installation considerations**
+    * **Site surveys:**
+    * **Heat maps:**
+    * **WiFi analyzers:**
+    * **Channel overlaps:**
+    * **Wireless access point (WAP) placement:**
+    * **Controller and access point security:**
 # 3.5 Given a scenario, implement secure mobile solutions.
 # 3.6 Given a scenario, apply cybersecurity solutions to the cloud.
 # 3.7 Given a scenario, implement identity and account management controls.
