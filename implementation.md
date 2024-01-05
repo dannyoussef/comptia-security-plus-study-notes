@@ -169,29 +169,36 @@
 > Commonly monitors files that would never change things like your OS files, where changes indicate some type of malicious activity.
 # 3.4 Given a scenario, install and configure wireless security settings.
 * **Cryptographic protocols**
-    * **WiFi Protected Access 2 (WPA2):**
-    * **WiFi Protected Access 3 (WPA3):**
-    * **Counter-mode/CBC-MAC Protocol (CCMP):**
-    * **Simultaneous Authentication of Equals (SAE):**
+    * **WiFi Protected Access 2 (WPA2):** an encryption scheme that implemented the CCMP.
+    * **WiFi Protected Access 3 (WPA3):** released in 2018 to address the weaknesses in WPA2. Uses a much stronger 256-bit Galois/Counter Mode Protocol (GCMP-256) for encryption.
+    > Two versions: WPA3-Personal for home users, and WPA3-Enterprise for corporate users.
+    * **Counter-mode/CBC-MAC Protocol (CCMP):** created to replace WEP and TKIP/WPA. Uses Advanced Encryption Standard (AES) with a 128-bit key.
+    * **Simultaneous Authentication of Equals (SAE):** used with WPA3-Personal and replaced WPA2-PSK (protects agains brute-force attacks). Uses a secure Diffie Hellman handshake called dragonfly. Uses perfect forward secrecy (PFS), so immune to offline attacks.
 * **Authentication protocols**
-    * **Extensible Authentication Protocol (EAP):**
-    * **Protected Extensible Authentication Protocol (PEAP):**
-    * **EAP-FAST:**
-    * **EAP-TLS:**
-    * **EAP-TTLS:**
-    * **IEEE 802.1X:**
-    * **Remote Authentication Dial-in User Service (RADIUS) Federation:**
+    * **Extensible Authentication Protocol (EAP):** an authentication framework that allows for new authentication technologies to be compatible with existing wireless or point-to-point connection technologies.
+    * **Protected Extensible Authentication Protocol (PEAP):** encapsulates EAP methods within a TLS tunnel that provides authentication and potentially encryption.
+    * **EAP-FAST:** developed by Cisco, used in wireless networks and point-to-point connections to perform session authentication.
+    * **EAP-TLS:** a secure version of wireless authentication that requires X509 certification. Involves 3 parties: the supplicant (user's device), the authenticator (switch or controller), and the authentication server (RADIUS server).
+    * **EAP-TTLS:** uses two phases: the first is to set up a secure session with the server, by creating a tunnel, utilizing certificates that are seamless to the client. Second phase uses a protocol such as MS-CHAP to complete the session.
+    > Designed to connect older, legacy systems.
+    * **IEEE 802.1X:** transparent to users because it uses certificate authentication. Can be used in conjunction with a RADIUS server for enterprise networks.
+    * **Remote Authentication Dial-in User Service (RADIUS) Federation:** enables members of one organization to authenticate to another with their normal credentials. Trust is across multiple RADIUS servers across multiple organizations.
+    > A federation service where network access is gained using wireless access points (WAPs). WAP forwards the wireless device's credentials to the RADIUS server for authentication. Commonly uses 802.1X are the authentication method (which relies on EAP).
 * **Methods**
-    * **Pre-shared key (PSK) vs. Enterprise vs. Open:**
-    * **WiFi Protected Setup (WPS):**
-    * **Captive portals:**
+    * **Pre-shared key (PSK) vs. Enterprise vs. Open:** PSK was introduced to the home user who does not have an enterprise setup. The home user enters the password of the wireless router to gain access to the home network. Enterprise; a corporate version of WPA2 or WPA3, used in a centralized domain environment. Often where a RADIUS server combines with 802.1X, using certificates for authentication. Open; allows any device to authenticate and then attempt to communicate with the access point.
+    * **WiFi Protected Setup (WPS):** password is already stored and all you need to do is press the button to get connected to the wireless network.
+    > Password is stored locally, so could be brute-forced.
+    * **Captive portals:** WiFi redirects users to a webpage when they connect to SSID. Users provide additional validation of identity, normally through an emai address or social identity.
+    > Common in airports and public spaces. May include acceptable use policy and premium upgrade offer.
 * **Installation considerations**
-    * **Site surveys:**
-    * **Heat maps:**
-    * **WiFi analyzers:**
-    * **Channel overlaps:**
-    * **Wireless access point (WAP) placement:**
-    * **Controller and access point security:**
+    * **Site surveys:** the process of investigating the presence, strength, and reach of wireless access points deployed in an environment.
+    > Usually involves walking around with a portable wireless device, taking note of the wireless signal strength, and mapping this on a plot or schematic of the building.
+    * **Heat maps:** a visual representation of the wireless signal coverage and strength.
+    * **WiFi analyzers:** helps track and analyze your wireless network's performance.
+    * **Channel overlaps:** choose different channels per device so that there are no conflicts between access points.
+    * **Wireless access point (WAP) placement:** if you're installing a new access point, you want to make sure that you place it in the right location. Minimal overlap with other access points and maximize the coverage that's being used in your environment. Avoid placement near electronic devices that could create interference, and areas where signals can be absorbed.
+    > This should minimize the number of physical access points needed.
+    * **Controller and access point security:** a wireless controller enables central management of configuration of access points, and security patches and firmware updates. Use HTTPS to encrypt traffic to controller and WAP web interfaces. Use strong authentication methods on the access points themselves.
 # 3.5 Given a scenario, implement secure mobile solutions.
 # 3.6 Given a scenario, apply cybersecurity solutions to the cloud.
 # 3.7 Given a scenario, implement identity and account management controls.
