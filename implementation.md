@@ -200,6 +200,59 @@
     > This should minimize the number of physical access points needed.
     * **Controller and access point security:** a wireless controller enables central management of configuration of access points, and security patches and firmware updates. Use HTTPS to encrypt traffic to controller and WAP web interfaces. Use strong authentication methods on the access points themselves.
 # 3.5 Given a scenario, implement secure mobile solutions.
+* **Connection methods and receivers**
+    * **Cellular:**
+    * **WiFi:**
+    * **Bluetooth:**
+    * **NFC:**
+    * **Infrared:**
+    * **USB:**
+    * **Point-to-point:**
+    * **Point-to-multipoint:**
+    * **Global Positioning System (GPS):**
+    * **RFID:**
+* **Mobile device management (MDM)**
+    * **Application management:**
+    * **Content management:**
+    * **Remote wipe:**
+    * **Geofencing:**
+    * **Geolocation:**
+    * **Screen locks:**
+    * **Push notifications:**
+    * **Passwords and PINs:**
+    * **Biometrics:**
+    * **Context-aware authentication:**
+    * **Containerization:**
+    * **Storage segmentation:**
+    * **Full device encryption:**
+* **Mobile devices**
+    * **MicroSD hardware security module (HSM):**
+    * **MDM/Unified Endpoint Management (UEM):**
+    * **Mobile application management (MAM):**
+    * **SEAndroid:**
+* **Enforcement and monitoring of:**
+    * **Third-party application stores:**
+    * **Rooting/jailbreaking:**
+    * **Sideloading:**
+    * **Custom firmware:**
+    * **Carrier unlocking:**
+    * **Firmware over-the-air (OTA) updates:**
+    * **Camera use:**
+    * **SMS/Multimedia Messaging Service (MMS)/Rich Communication Services (RCS):**
+    * **External media:**
+    * **USB On-The-Go (USB OTG):**
+    * **Recording microphone:**
+    * **GPS tagging:**
+    * **WiFi direct/ad hoc:**
+    * **Tethering:**
+    * **Hotspot:**
+    * **Payment methods:**
+* **Deployment models**
+    * **Bring your own device (BYOD):**
+    * **Corporate-owned personally enabled (COPE):**
+    * **Choose your own device (CYOD):**
+    * **Corporate-owned:**
+    * **Virtual desktop infrastructure (VDI):**
 # 3.6 Given a scenario, apply cybersecurity solutions to the cloud.
 # 3.7 Given a scenario, implement identity and account management controls.
 # 3.8 Given a scenario, implement authentication and authorization solutions.
