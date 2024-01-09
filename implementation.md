@@ -201,58 +201,58 @@
     * **Controller and access point security:** a wireless controller enables central management of configuration of access points, and security patches and firmware updates. Use HTTPS to encrypt traffic to controller and WAP web interfaces. Use strong authentication methods on the access points themselves.
 # 3.5 Given a scenario, implement secure mobile solutions.
 * **Connection methods and receivers**
-    * **Cellular:**
-    * **WiFi:**
-    * **Bluetooth:**
-    * **NFC:**
-    * **Infrared:**
-    * **USB:**
-    * **Point-to-point:**
-    * **Point-to-multipoint:**
-    * **Global Positioning System (GPS):**
-    * **RFID:**
+    * **Cellular:** networks such as 4G and 5G that provide mobile devices with wireless connectivity through service providers.
+    * **WiFi:** wireless local are networking technology that allows devices to connect to the internet or other devices within a specific range.
+    * **Bluetooth:** short-range wireless communication technology commonly used for connecting peripherals like keyboards, headsets, or transferring files between devices.
+    * **NFC:** near field communication; short-range communication technology for contactless data exchange between devices. Often used in mobile payments.
+    * **Infrared:** Older technology using infrared light for short-range communication between devices.
+    * **USB:** universal serial bus; a common interface for connecting devices like smartphones to computers or charging.
+    * **Point-to-point:** direct communication between two devices.
+    * **Point-to-multipoint:** communication from one point to multiple devices, such as broadcasting a signal.
+    * **Global Positioning System (GPS):** satellite-based navigation system providing location and time information.
+    * **RFID:** radio-frequency identification; technology for tracking and identifying objects using radio waves.
 * **Mobile device management (MDM)**
-    * **Application management:**
-    * **Content management:**
-    * **Remote wipe:**
-    * **Geofencing:**
-    * **Geolocation:**
-    * **Screen locks:**
-    * **Push notifications:**
-    * **Passwords and PINs:**
-    * **Biometrics:**
-    * **Context-aware authentication:**
-    * **Containerization:**
-    * **Storage segmentation:**
-    * **Full device encryption:**
+    * **Application management:** controlling and securing mobile applications on devices.
+    * **Content management:** managing and securing data and content.
+    * **Remote wipe:** capability to remotely erase data on a lost or stolen device.
+    * **Geofencing:** setting up virtual boundaries to trigger actions or alerts when a device enters or exits a specific area.
+    * **Geolocation:** determining the physical location of a device.
+    * **Screen locks:** security measures like PINs, passwords, or biometrics to lock and unlock a device.
+    * **Push notifications:** messages or alerts sent from a server to a mobile device.
+    * **Passwords and PINs:** authentication methods to secure access to the device.
+    * **Biometrics:** authentication using unique physical or behavioral characteristics, like fingerprint or facial recognition.
+    * **Context-aware authentication:** authentication based on contextual factors like location or time.
+    * **Containerization:** isolating work and personal data in separate containers on a device.
+    * **Storage segmentation:** dividing storage space for different purposes or security levels.
+    * **Full device encryption:** encrypting all data on the device to protect against unauthorized access.
 * **Mobile devices**
-    * **MicroSD hardware security module (HSM):**
-    * **MDM/Unified Endpoint Management (UEM):**
-    * **Mobile application management (MAM):**
-    * **SEAndroid:**
-* **Enforcement and monitoring of:**
-    * **Third-party application stores:**
-    * **Rooting/jailbreaking:**
-    * **Sideloading:**
-    * **Custom firmware:**
-    * **Carrier unlocking:**
-    * **Firmware over-the-air (OTA) updates:**
-    * **Camera use:**
-    * **SMS/Multimedia Messaging Service (MMS)/Rich Communication Services (RCS):**
-    * **External media:**
-    * **USB On-The-Go (USB OTG):**
-    * **Recording microphone:**
-    * **GPS tagging:**
-    * **WiFi direct/ad hoc:**
-    * **Tethering:**
-    * **Hotspot:**
-    * **Payment methods:**
+    * **MicroSD hardware security module (HSM):** hardware module to enhance the security of data stored on a MicroSD card.
+    * **MDM/Unified Endpoint Management (UEM):** managing and securing mobile devices through centralized software.
+    * **Mobile application management (MAM):** controlling and securing mobile applications within an enterprise.
+    * **SEAndroid:** Security-Enhanced Android, a version of the Android OS with additional security features.
+* **Enforcement and monitoring of**
+    * **Third-party application stores:** controlling access to app stores other than the official ones, ensuring apps are from trusted sources.
+    * **Rooting/jailbreaking:** bypassing device restrictions to gain elevated privileges, posing security risks.
+    * **Sideloading:** installing applications from sources other than official app stores.
+    * **Custom firmware:** modified OS software, potentially introducing security vulnerabilities.
+    * **Carrier unlocking:** allowing a device to be used on different mobile carriers.
+    * **Firmware over-the-air (OTA) updates:** updating device firmware wirelessly to patch security vulnerabilities.
+    * **Camera use:** monitoring and controlling access to a device's camera.
+    * **SMS/Multimedia Messaging Service (MMS)/Rich Communication Services (RCS):** managing and securing messaging services.
+    * **External media:** controlling access to external storage devices like USB devices.
+    * **USB On-The-Go (USB OTG):** allowing mobile devices to act as hosts for USB peripherals.
+    * **Recording microphone:** monitoring and controlling access to a device's microphone.
+    * **GPS tagging:** managing and controlling location-based services.
+    * **WiFi direct/ad hoc:** allowing devices to connect directly without a wireless access point.
+    * **Tethering:** sharing a device's internet connection with other devices.
+    * **Hotspot:** creating a wireless access point for other devices to connect to.
+    * **Payment methods:** securing mobile payment options and transactions.
 * **Deployment models**
-    * **Bring your own device (BYOD):**
-    * **Corporate-owned personally enabled (COPE):**
-    * **Choose your own device (CYOD):**
-    * **Corporate-owned:**
-    * **Virtual desktop infrastructure (VDI):**
+    * **Bring your own device (BYOD):** allowing employees to use their personal devices for work purposes.
+    * **Corporate-owned personally enabled (COPE):** companies providing and controlling devices used for both personal and work purposes.
+    * **Choose your own device (CYOD):** employees selecting from a list of approved devices for work purposes.
+    * **Corporate-owned:** companies providing and controlling devices solely for work purposes.
+    * **Virtual desktop infrastructure (VDI):** running desktop environments on a server, accessed remotely from a mobile device.
 # 3.6 Given a scenario, apply cybersecurity solutions to the cloud.
 # 3.7 Given a scenario, implement identity and account management controls.
 # 3.8 Given a scenario, implement authentication and authorization solutions.
