@@ -254,6 +254,36 @@
     * **Corporate-owned:** companies providing and controlling devices solely for work purposes.
     * **Virtual desktop infrastructure (VDI):** running desktop environments on a server, accessed remotely from a mobile device.
 # 3.6 Given a scenario, apply cybersecurity solutions to the cloud.
+* **Cloud security controls**
+    * **High availability across zones:**
+    * **Resource policies:**
+    * **Secrets management:**
+    * **Integration and auditing:**
+    * **Storage**
+        * **Permissions:**
+        * **Encryption:**
+        * **Replication:**
+        * **High availability:**
+    * **Network**
+        * **Virtual networks:**
+        * **Public and private subnets:**
+        * **Segmentation:**
+        * **API inspection and integration:**
+    * **Compute**
+        * **Security groups:**
+        * **Dynamic resource allocation:**
+        * **Instance awareness:**
+        * **Virtual private cloud (VPC) endpoint:**
+        * **Container security:**
+* **Solutions**
+    * **CASB:**
+    * **Application security:**
+    * **Next-generation secure web gateway (SWG):**
+    * **Firewall considerations in a cloud environment**
+        * **Cost:**
+        * **Need for segmentation:**
+        * **Open Systems Interconnection (OSI) layers:**
+* **Cloud native controls vs. third-party solutions:**
 # 3.7 Given a scenario, implement identity and account management controls.
 # 3.8 Given a scenario, implement authentication and authorization solutions.
 # 3.9 Given a scenario, implement public key infrastructure.
